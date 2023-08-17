@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>interfaces</name>
+  <name>waypoint_publisher</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="antony.zh.oon@gmail.com">mcav</maintainer>
+  <description>A basic package for putputting a fixed goal waypoint</description>
+  <maintainer email="s.a.baaset.moslih@gmail.com">mcav</maintainer>
   <license>TODO: License declaration</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
