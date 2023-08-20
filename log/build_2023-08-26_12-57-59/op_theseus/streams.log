@@ -1,0 +1,35 @@
+[0.989s] Invoking command in '/home/mcav/dbat/ESDA_onboarding/op_theseus': PYTHONPATH=/home/mcav/dbat/ESDA_onboarding/build/op_theseus/prefix_override:/home/mcav/dbat/ESDA_onboarding/install/op_theseus/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/op_theseus build --build-base /home/mcav/dbat/ESDA_onboarding/build/op_theseus/build install --record /home/mcav/dbat/ESDA_onboarding/build/op_theseus/install.log --single-version-externally-managed
+[1.357s] running egg_info
+[1.358s] creating ../build/op_theseus/op_theseus.egg-info
+[1.358s] writing ../build/op_theseus/op_theseus.egg-info/PKG-INFO
+[1.358s] writing dependency_links to ../build/op_theseus/op_theseus.egg-info/dependency_links.txt
+[1.359s] writing entry points to ../build/op_theseus/op_theseus.egg-info/entry_points.txt
+[1.359s] writing requirements to ../build/op_theseus/op_theseus.egg-info/requires.txt
+[1.359s] writing top-level names to ../build/op_theseus/op_theseus.egg-info/top_level.txt
+[1.359s] writing manifest file '../build/op_theseus/op_theseus.egg-info/SOURCES.txt'
+[1.361s] reading manifest file '../build/op_theseus/op_theseus.egg-info/SOURCES.txt'
+[1.362s] writing manifest file '../build/op_theseus/op_theseus.egg-info/SOURCES.txt'
+[1.362s] running build
+[1.362s] running build_py
+[1.362s] creating /home/mcav/dbat/ESDA_onboarding/build/op_theseus/build
+[1.362s] creating /home/mcav/dbat/ESDA_onboarding/build/op_theseus/build/lib
+[1.363s] creating /home/mcav/dbat/ESDA_onboarding/build/op_theseus/build/lib/op_theseus
+[1.363s] copying op_theseus/__init__.py -> /home/mcav/dbat/ESDA_onboarding/build/op_theseus/build/lib/op_theseus
+[1.363s] running install
+[1.363s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.363s]   warnings.warn(
+[1.363s] running install_lib
+[1.364s] creating /home/mcav/dbat/ESDA_onboarding/install/op_theseus/lib/python3.10/site-packages/op_theseus
+[1.364s] copying /home/mcav/dbat/ESDA_onboarding/build/op_theseus/build/lib/op_theseus/__init__.py -> /home/mcav/dbat/ESDA_onboarding/install/op_theseus/lib/python3.10/site-packages/op_theseus
+[1.365s] byte-compiling /home/mcav/dbat/ESDA_onboarding/install/op_theseus/lib/python3.10/site-packages/op_theseus/__init__.py to __init__.cpython-310.pyc
+[1.365s] running install_data
+[1.365s] creating /home/mcav/dbat/ESDA_onboarding/install/op_theseus/share/ament_index
+[1.365s] creating /home/mcav/dbat/ESDA_onboarding/install/op_theseus/share/ament_index/resource_index
+[1.366s] creating /home/mcav/dbat/ESDA_onboarding/install/op_theseus/share/ament_index/resource_index/packages
+[1.366s] copying resource/op_theseus -> /home/mcav/dbat/ESDA_onboarding/install/op_theseus/share/ament_index/resource_index/packages
+[1.366s] copying package.xml -> /home/mcav/dbat/ESDA_onboarding/install/op_theseus/share/op_theseus
+[1.366s] running install_egg_info
+[1.367s] Copying ../build/op_theseus/op_theseus.egg-info to /home/mcav/dbat/ESDA_onboarding/install/op_theseus/lib/python3.10/site-packages/op_theseus-0.0.0-py3.10.egg-info
+[1.369s] running install_scripts
+[1.400s] writing list of installed files to '/home/mcav/dbat/ESDA_onboarding/build/op_theseus/install.log'
+[1.452s] Invoked command in '/home/mcav/dbat/ESDA_onboarding/op_theseus' returned '0': PYTHONPATH=/home/mcav/dbat/ESDA_onboarding/build/op_theseus/prefix_override:/home/mcav/dbat/ESDA_onboarding/install/op_theseus/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/op_theseus build --build-base /home/mcav/dbat/ESDA_onboarding/build/op_theseus/build install --record /home/mcav/dbat/ESDA_onboarding/build/op_theseus/install.log --single-version-externally-managed

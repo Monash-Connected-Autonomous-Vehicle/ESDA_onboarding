@@ -1,0 +1,6 @@
+Invoking command in '/home/mcav/dbat/ESDA_onboarding/build/custom_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/mcav/dbat/ESDA_onboarding/custom_interfaces -DCMAKE_INSTALL_PREFIX=/home/mcav/dbat/ESDA_onboarding/install/custom_interfaces
+Invoked command in '/home/mcav/dbat/ESDA_onboarding/build/custom_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/mcav/dbat/ESDA_onboarding/custom_interfaces -DCMAKE_INSTALL_PREFIX=/home/mcav/dbat/ESDA_onboarding/install/custom_interfaces
+Invoking command in '/home/mcav/dbat/ESDA_onboarding/build/custom_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mcav/dbat/ESDA_onboarding/build/custom_interfaces -- -j8 -l8
+Invoked command in '/home/mcav/dbat/ESDA_onboarding/build/custom_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mcav/dbat/ESDA_onboarding/build/custom_interfaces -- -j8 -l8
+Invoking command in '/home/mcav/dbat/ESDA_onboarding/build/custom_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mcav/dbat/ESDA_onboarding/build/custom_interfaces
+Invoked command in '/home/mcav/dbat/ESDA_onboarding/build/custom_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mcav/dbat/ESDA_onboarding/build/custom_interfaces
