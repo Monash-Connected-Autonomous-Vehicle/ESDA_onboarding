@@ -10,15 +10,13 @@ class WaypointPublisher(Node):
         super().__init__('waypoint_publisher')
         self.publisher_ = self.create_publisher(Waypoint, 'global_waypoint', 1)
         
-        HALF_SECOND = 1
-        self.timer = self.create_timer(HALF_SECOND, self.waypoint_callback)
+        ONE_SECOND = 1
+        self.timer = self.create_timer(ONE_SECOND, self.waypoint_callback)
 
     def waypoint_callback(self):
         wp = Waypoint()
+        wp.x, wp.y, wp.z, wp.radius = 25, 25, 0, 2
         print(wp)
-        wp.x, wp.y, wp.z, wp.radius = 25, 37, 0, 1
-        print(wp)
-                
         self.publisher_.publish(wp)
 
 
