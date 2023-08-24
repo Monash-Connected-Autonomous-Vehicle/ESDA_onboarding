@@ -1,0 +1,26 @@
+[0.750s] Invoking command in '/home/yentung-yen/mcav/ESDA_onboarding/onboarding_task1': PYTHONPATH=/home/yentung-yen/mcav/ESDA_onboarding/build/onboarding_task1/prefix_override:/home/yentung-yen/mcav/ESDA_onboarding/install/onboarding_task1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/onboarding_task1 build --build-base /home/yentung-yen/mcav/ESDA_onboarding/build/onboarding_task1/build install --record /home/yentung-yen/mcav/ESDA_onboarding/build/onboarding_task1/install.log --single-version-externally-managed
+[0.948s] running egg_info
+[0.949s] writing ../build/onboarding_task1/onboarding_task1.egg-info/PKG-INFO
+[0.949s] writing dependency_links to ../build/onboarding_task1/onboarding_task1.egg-info/dependency_links.txt
+[0.949s] writing entry points to ../build/onboarding_task1/onboarding_task1.egg-info/entry_points.txt
+[0.949s] writing requirements to ../build/onboarding_task1/onboarding_task1.egg-info/requires.txt
+[0.949s] writing top-level names to ../build/onboarding_task1/onboarding_task1.egg-info/top_level.txt
+[0.951s] reading manifest file '../build/onboarding_task1/onboarding_task1.egg-info/SOURCES.txt'
+[0.952s] writing manifest file '../build/onboarding_task1/onboarding_task1.egg-info/SOURCES.txt'
+[0.952s] running build
+[0.952s] running build_py
+[0.952s] copying onboarding_task1/control.py -> /home/yentung-yen/mcav/ESDA_onboarding/build/onboarding_task1/build/lib/onboarding_task1
+[0.953s] running install
+[0.953s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.953s]   warnings.warn(
+[0.953s] running install_lib
+[0.954s] copying /home/yentung-yen/mcav/ESDA_onboarding/build/onboarding_task1/build/lib/onboarding_task1/control.py -> /home/yentung-yen/mcav/ESDA_onboarding/install/onboarding_task1/lib/python3.10/site-packages/onboarding_task1
+[0.954s] byte-compiling /home/yentung-yen/mcav/ESDA_onboarding/install/onboarding_task1/lib/python3.10/site-packages/onboarding_task1/control.py to control.cpython-310.pyc
+[0.955s] running install_data
+[0.955s] running install_egg_info
+[0.957s] removing '/home/yentung-yen/mcav/ESDA_onboarding/install/onboarding_task1/lib/python3.10/site-packages/onboarding_task1-0.0.0-py3.10.egg-info' (and everything under it)
+[0.957s] Copying ../build/onboarding_task1/onboarding_task1.egg-info to /home/yentung-yen/mcav/ESDA_onboarding/install/onboarding_task1/lib/python3.10/site-packages/onboarding_task1-0.0.0-py3.10.egg-info
+[0.957s] running install_scripts
+[0.977s] Installing control_publisher script to /home/yentung-yen/mcav/ESDA_onboarding/install/onboarding_task1/lib/onboarding_task1
+[0.977s] writing list of installed files to '/home/yentung-yen/mcav/ESDA_onboarding/build/onboarding_task1/install.log'
+[1.011s] Invoked command in '/home/yentung-yen/mcav/ESDA_onboarding/onboarding_task1' returned '0': PYTHONPATH=/home/yentung-yen/mcav/ESDA_onboarding/build/onboarding_task1/prefix_override:/home/yentung-yen/mcav/ESDA_onboarding/install/onboarding_task1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/onboarding_task1 build --build-base /home/yentung-yen/mcav/ESDA_onboarding/build/onboarding_task1/build install --record /home/yentung-yen/mcav/ESDA_onboarding/build/onboarding_task1/install.log --single-version-externally-managed

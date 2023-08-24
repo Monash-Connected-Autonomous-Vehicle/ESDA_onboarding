@@ -1,0 +1,6 @@
+{
+  "package_name": "custom_interfaces",
+  "non_idl_tuples": [
+    "/home/yentung-yen/mcav/ESDA_onboarding/custom_interfaces:msg/Waypoint.msg"
+  ]
+}
