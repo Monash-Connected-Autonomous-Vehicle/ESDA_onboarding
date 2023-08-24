@@ -1,3 +1,4 @@
+import math
 import rclpy
 from rclpy.node import Node
 
@@ -8,32 +9,49 @@ from nav_msgs.msg import OccupancyGrid
 class LaserToGrid(Node):
     def __init__(self):
         super().__init__('laser_to_grid')
-        self.subscription = self.create_subscription(
-            LaserScan,
-            'scan',
-            self.map_to_grid,
-            1)
-        self.subscription  # prevent unused variable warning
-        
-      	self.publisher_ = self.create_publisher(OccupancyGrid, 'grid', 1)
+        self.scan_sub = self.create_subscription(LaserScan, 'scan', self.map_to_grid, 1)
+        self.scan_sub  # prevent unused variable warning
+        self.grid_pub_ = self.create_publisher(OccupancyGrid, 'grid', 1)
+        self.GRID_WIDTH = 100
+        self.GRID_RES = 0.1 # metres/cell
 
-    def map_to_grid(self, scan_msg):
-        # get scan
+    def map_to_grid(self, scan_msg):                
+        laser_points = scan_msg.ranges
+        inc = scan_msg.angle_increment
+        xy_points = []
         
-        # convert points to x, y relative to centre
+        # get scan points and convert points to x, y relative to centre
+        # grid resolution will be 1cm so also round points to nearest cm then scale up
+        for p in range(len(laser_points)):
+            if laser_points[p] != float('inf'):
+                r = 10 * laser_points[p]
+                ang = p*inc
+                x = int(r * math.cos(ang))
+                y = int(r * math.sin(ang))
+                xy_points.append([x, y])
+                
+        # create an occupancy grid with 0 occupancy
+        grid = OccupancyGrid()
+        grid.header = scan_msg.header
+        grid.info.resolution = self.GRID_RES
+        grid.info.width = self.GRID_WIDTH
+        grid.info.height = self.GRID_WIDTH
+        data = [0] * self.GRID_WIDTH * self.GRID_WIDTH
         
-        # translate points so that the bottom left most is the origin
-        
-        # create an occupancy grid with 
-        # 	width, height equal to domain, range of points
-        #   resolution equal to something small but fixed
-        
-        # map point coordinates to the occupancy grid where
+
+        # map point coordinates to the occupancy grid data array where
         #   bottom ros is inserted first, then next row up, then next...
+        for p in xy_points:
+            # index is x + offset
+            idx = p[0] + p[1]
         
+       
+       # translate xy_points to the right index in 
         
-
-
+        grid.data = data
+        
+        self.grid_pub_.publish(grid)
+        
 def main(args=None):
     rclpy.init(args=args)
     node = LaserToGrid()
