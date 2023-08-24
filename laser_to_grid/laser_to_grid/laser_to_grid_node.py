@@ -36,19 +36,21 @@ class LaserToGrid(Node):
         grid.info.resolution = self.GRID_RES
         grid.info.width = self.GRID_WIDTH
         grid.info.height = self.GRID_WIDTH
-        data = [0] * self.GRID_WIDTH * self.GRID_WIDTH
+        grid.info.origin.position.x = -self.GRID_RES * self.GRID_WIDTH/2
+        grid.info.origin.position.y = -self.GRID_RES * self.GRID_WIDTH/2
+        grid.data = [0] * self.GRID_WIDTH * self.GRID_WIDTH
         
 
         # map point coordinates to the occupancy grid data array where
-        #   bottom ros is inserted first, then next row up, then next...
+        #   bottom row is inserted first, then next row up, then next...
         for p in xy_points:
-            # index is x + offset
-            idx = p[0] + p[1]
-        
-       
-       # translate xy_points to the right index in 
-        
-        grid.data = data
+            # idk y we flip in x & y
+            # idk y we translate by half of resolution
+            x = -p[1] + int(self.GRID_WIDTH/2)
+            y = -p[0] + int(self.GRID_WIDTH/2)    
+            idx = self.GRID_WIDTH*x + y
+ 
+            grid.data[idx] = 100 
         
         self.grid_pub_.publish(grid)
         
