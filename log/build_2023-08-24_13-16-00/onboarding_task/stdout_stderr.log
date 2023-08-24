@@ -1,0 +1,36 @@
+running egg_info
+creating ../../build/onboarding_task/onboarding_task.egg-info
+writing ../../build/onboarding_task/onboarding_task.egg-info/PKG-INFO
+writing dependency_links to ../../build/onboarding_task/onboarding_task.egg-info/dependency_links.txt
+writing entry points to ../../build/onboarding_task/onboarding_task.egg-info/entry_points.txt
+writing requirements to ../../build/onboarding_task/onboarding_task.egg-info/requires.txt
+writing top-level names to ../../build/onboarding_task/onboarding_task.egg-info/top_level.txt
+writing manifest file '../../build/onboarding_task/onboarding_task.egg-info/SOURCES.txt'
+reading manifest file '../../build/onboarding_task/onboarding_task.egg-info/SOURCES.txt'
+writing manifest file '../../build/onboarding_task/onboarding_task.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/mcav/jpan/ESDA_onboarding/build/onboarding_task/build
+creating /home/mcav/jpan/ESDA_onboarding/build/onboarding_task/build/lib
+creating /home/mcav/jpan/ESDA_onboarding/build/onboarding_task/build/lib/onboarding_task
+copying onboarding_task/control.py -> /home/mcav/jpan/ESDA_onboarding/build/onboarding_task/build/lib/onboarding_task
+copying onboarding_task/__init__.py -> /home/mcav/jpan/ESDA_onboarding/build/onboarding_task/build/lib/onboarding_task
+running install
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running install_lib
+creating /home/mcav/jpan/ESDA_onboarding/install/onboarding_task/lib/python3.10/site-packages/onboarding_task
+copying /home/mcav/jpan/ESDA_onboarding/build/onboarding_task/build/lib/onboarding_task/control.py -> /home/mcav/jpan/ESDA_onboarding/install/onboarding_task/lib/python3.10/site-packages/onboarding_task
+copying /home/mcav/jpan/ESDA_onboarding/build/onboarding_task/build/lib/onboarding_task/__init__.py -> /home/mcav/jpan/ESDA_onboarding/install/onboarding_task/lib/python3.10/site-packages/onboarding_task
+byte-compiling /home/mcav/jpan/ESDA_onboarding/install/onboarding_task/lib/python3.10/site-packages/onboarding_task/control.py to control.cpython-310.pyc
+byte-compiling /home/mcav/jpan/ESDA_onboarding/install/onboarding_task/lib/python3.10/site-packages/onboarding_task/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/mcav/jpan/ESDA_onboarding/install/onboarding_task/share/ament_index
+creating /home/mcav/jpan/ESDA_onboarding/install/onboarding_task/share/ament_index/resource_index
+creating /home/mcav/jpan/ESDA_onboarding/install/onboarding_task/share/ament_index/resource_index/packages
+copying resource/onboarding_task -> /home/mcav/jpan/ESDA_onboarding/install/onboarding_task/share/ament_index/resource_index/packages
+copying package.xml -> /home/mcav/jpan/ESDA_onboarding/install/onboarding_task/share/onboarding_task
+running install_egg_info
+Copying ../../build/onboarding_task/onboarding_task.egg-info to /home/mcav/jpan/ESDA_onboarding/install/onboarding_task/lib/python3.10/site-packages/onboarding_task-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/mcav/jpan/ESDA_onboarding/build/onboarding_task/install.log'

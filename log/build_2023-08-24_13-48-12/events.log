@@ -1,0 +1,6 @@
+[0.000000] (-) TimerEvent: {}
+[0.000095] (-) JobUnselected: {'identifier': 'articubot_one'}
+[0.000118] (-) JobUnselected: {'identifier': 'custom_interfaces'}
+[0.000135] (-) JobUnselected: {'identifier': 'onboarding_task'}
+[0.000149] (-) JobUnselected: {'identifier': 'waypoint_pub'}
+[0.000163] (-) EventReactorShutdown: {}

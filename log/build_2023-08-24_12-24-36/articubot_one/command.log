@@ -1,0 +1,6 @@
+Invoking command in '/home/mcav/jpan/ESDA_onboarding/build/articubot_one': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/mcav/jpan/ESDA_onboarding/articubot_one -DCMAKE_INSTALL_PREFIX=/home/mcav/jpan/ESDA_onboarding/install/articubot_one
+Invoked command in '/home/mcav/jpan/ESDA_onboarding/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/mcav/jpan/ESDA_onboarding/articubot_one -DCMAKE_INSTALL_PREFIX=/home/mcav/jpan/ESDA_onboarding/install/articubot_one
+Invoking command in '/home/mcav/jpan/ESDA_onboarding/build/articubot_one': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mcav/jpan/ESDA_onboarding/build/articubot_one -- -j8 -l8
+Invoked command in '/home/mcav/jpan/ESDA_onboarding/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mcav/jpan/ESDA_onboarding/build/articubot_one -- -j8 -l8
+Invoking command in '/home/mcav/jpan/ESDA_onboarding/build/articubot_one': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mcav/jpan/ESDA_onboarding/build/articubot_one
+Invoked command in '/home/mcav/jpan/ESDA_onboarding/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mcav/jpan/ESDA_onboarding/build/articubot_one

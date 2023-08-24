@@ -1,0 +1,17 @@
+package.xml
+setup.cfg
+setup.py
+../../build/onboarding_task/onboarding_task.egg-info/PKG-INFO
+../../build/onboarding_task/onboarding_task.egg-info/SOURCES.txt
+../../build/onboarding_task/onboarding_task.egg-info/dependency_links.txt
+../../build/onboarding_task/onboarding_task.egg-info/entry_points.txt
+../../build/onboarding_task/onboarding_task.egg-info/requires.txt
+../../build/onboarding_task/onboarding_task.egg-info/top_level.txt
+../../build/onboarding_task/onboarding_task.egg-info/zip-safe
+onboarding_task/__init__.py
+onboarding_task/control.py
+onboarding_task/sense.py
+resource/onboarding_task
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

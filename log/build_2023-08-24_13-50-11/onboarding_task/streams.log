@@ -1,0 +1,26 @@
+[0.709s] Invoking command in '/home/mcav/jpan/ESDA_onboarding/src/onboarding_task': PYTHONPATH=/home/mcav/jpan/ESDA_onboarding/build/onboarding_task/prefix_override:/home/mcav/jpan/ESDA_onboarding/install/onboarding_task/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/onboarding_task build --build-base /home/mcav/jpan/ESDA_onboarding/build/onboarding_task/build install --record /home/mcav/jpan/ESDA_onboarding/build/onboarding_task/install.log --single-version-externally-managed
+[0.961s] running egg_info
+[0.962s] writing ../../build/onboarding_task/onboarding_task.egg-info/PKG-INFO
+[0.962s] writing dependency_links to ../../build/onboarding_task/onboarding_task.egg-info/dependency_links.txt
+[0.963s] writing entry points to ../../build/onboarding_task/onboarding_task.egg-info/entry_points.txt
+[0.963s] writing requirements to ../../build/onboarding_task/onboarding_task.egg-info/requires.txt
+[0.963s] writing top-level names to ../../build/onboarding_task/onboarding_task.egg-info/top_level.txt
+[0.965s] reading manifest file '../../build/onboarding_task/onboarding_task.egg-info/SOURCES.txt'
+[0.966s] writing manifest file '../../build/onboarding_task/onboarding_task.egg-info/SOURCES.txt'
+[0.966s] running build
+[0.966s] running build_py
+[0.966s] copying onboarding_task/sense.py -> /home/mcav/jpan/ESDA_onboarding/build/onboarding_task/build/lib/onboarding_task
+[0.967s] running install
+[0.967s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.967s]   warnings.warn(
+[0.967s] running install_lib
+[0.968s] copying /home/mcav/jpan/ESDA_onboarding/build/onboarding_task/build/lib/onboarding_task/sense.py -> /home/mcav/jpan/ESDA_onboarding/install/onboarding_task/lib/python3.10/site-packages/onboarding_task
+[0.969s] byte-compiling /home/mcav/jpan/ESDA_onboarding/install/onboarding_task/lib/python3.10/site-packages/onboarding_task/sense.py to sense.cpython-310.pyc
+[0.969s] running install_data
+[0.970s] running install_egg_info
+[0.972s] removing '/home/mcav/jpan/ESDA_onboarding/install/onboarding_task/lib/python3.10/site-packages/onboarding_task-0.0.0-py3.10.egg-info' (and everything under it)
+[0.972s] Copying ../../build/onboarding_task/onboarding_task.egg-info to /home/mcav/jpan/ESDA_onboarding/install/onboarding_task/lib/python3.10/site-packages/onboarding_task-0.0.0-py3.10.egg-info
+[0.973s] running install_scripts
+[0.996s] Installing scan script to /home/mcav/jpan/ESDA_onboarding/install/onboarding_task/lib/onboarding_task
+[0.996s] writing list of installed files to '/home/mcav/jpan/ESDA_onboarding/build/onboarding_task/install.log'
+[1.027s] Invoked command in '/home/mcav/jpan/ESDA_onboarding/src/onboarding_task' returned '0': PYTHONPATH=/home/mcav/jpan/ESDA_onboarding/build/onboarding_task/prefix_override:/home/mcav/jpan/ESDA_onboarding/install/onboarding_task/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/onboarding_task build --build-base /home/mcav/jpan/ESDA_onboarding/build/onboarding_task/build install --record /home/mcav/jpan/ESDA_onboarding/build/onboarding_task/install.log --single-version-externally-managed
