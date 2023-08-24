@@ -1,3 +1,0 @@
-[console_scripts]
-scan = onboarding_task.sense:main
-

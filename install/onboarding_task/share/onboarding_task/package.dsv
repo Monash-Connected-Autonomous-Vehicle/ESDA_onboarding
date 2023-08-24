@@ -1,6 +1,0 @@
-source;share/onboarding_task/hook/pythonpath.ps1
-source;share/onboarding_task/hook/pythonpath.dsv
-source;share/onboarding_task/hook/pythonpath.sh
-source;share/onboarding_task/hook/ament_prefix_path.ps1
-source;share/onboarding_task/hook/ament_prefix_path.dsv
-source;share/onboarding_task/hook/ament_prefix_path.sh
