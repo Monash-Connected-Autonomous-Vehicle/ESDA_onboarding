@@ -1,6 +1,0 @@
-Invoking command in '/home/klo40/ESDA_onboarding/build/custom_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/klo40/ESDA_onboarding/custom_interfaces -DCMAKE_INSTALL_PREFIX=/home/klo40/ESDA_onboarding/install/custom_interfaces
-Invoked command in '/home/klo40/ESDA_onboarding/build/custom_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/klo40/ESDA_onboarding/custom_interfaces -DCMAKE_INSTALL_PREFIX=/home/klo40/ESDA_onboarding/install/custom_interfaces
-Invoking command in '/home/klo40/ESDA_onboarding/build/custom_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/klo40/ESDA_onboarding/build/custom_interfaces -- -j8 -l8
-Invoked command in '/home/klo40/ESDA_onboarding/build/custom_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/klo40/ESDA_onboarding/build/custom_interfaces -- -j8 -l8
-Invoking command in '/home/klo40/ESDA_onboarding/build/custom_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/klo40/ESDA_onboarding/build/custom_interfaces
-Invoked command in '/home/klo40/ESDA_onboarding/build/custom_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/klo40/ESDA_onboarding/build/custom_interfaces
