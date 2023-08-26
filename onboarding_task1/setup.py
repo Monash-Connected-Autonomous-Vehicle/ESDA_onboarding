@@ -22,7 +22,8 @@ setup(
         'console_scripts': [
             'control_publisher = onboarding_task1.control:main',
             'laserscan = onboarding_task1.sense:main',
-            'trial = onboarding_task1.trial:main'
+            'trial = onboarding_task1.trial:main',
+            'laser_to_grid = onboarding_task1.laser_to_grid_node:main'
         ],
     },
 )
