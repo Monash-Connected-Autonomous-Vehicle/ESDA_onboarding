@@ -1,8 +1,8 @@
-# Install script for directory: /home/yentung-yen/mcav/ESDA_onboarding/build/custom_interfaces/custom_interfaces__py
+# Install script for directory: /home/klo40/ESDA_onboarding/build/custom_interfaces/custom_interfaces__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/yentung-yen/mcav/ESDA_onboarding/install/custom_interfaces")
+  set(CMAKE_INSTALL_PREFIX "/home/klo40/ESDA_onboarding/install/custom_interfaces")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

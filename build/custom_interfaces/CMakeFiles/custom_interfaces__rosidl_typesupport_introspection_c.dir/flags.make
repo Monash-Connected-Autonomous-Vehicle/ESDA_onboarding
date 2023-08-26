@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -DROSIDL_TYPESUPPORT_INTROSPECTION_C_BUILDING_DLL_custom_interfaces -DROS_PACKAGE_NAME=\"custom_interfaces\"
 
-C_INCLUDES = -I/home/yentung-yen/mcav/ESDA_onboarding/build/custom_interfaces/rosidl_typesupport_introspection_c -I/home/yentung-yen/mcav/ESDA_onboarding/build/custom_interfaces/rosidl_generator_c -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c
+C_INCLUDES = -I/home/klo40/ESDA_onboarding/build/custom_interfaces/rosidl_typesupport_introspection_c -I/home/klo40/ESDA_onboarding/build/custom_interfaces/rosidl_generator_c -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c
 
 C_FLAGS = -fPIC -Wall -std=gnu11
 

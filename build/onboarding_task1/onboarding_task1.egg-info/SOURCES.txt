@@ -10,6 +10,8 @@ setup.py
 ../build/onboarding_task1/onboarding_task1.egg-info/zip-safe
 onboarding_task1/__init__.py
 onboarding_task1/control.py
+onboarding_task1/sense.py
+onboarding_task1/trial.py
 resource/onboarding_task1
 test/test_copyright.py
 test/test_flake8.py

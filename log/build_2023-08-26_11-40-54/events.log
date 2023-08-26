@@ -1,0 +1,509 @@
+[0.000000] (-) TimerEvent: {}
+[0.001084] (articubot_one) JobQueued: {'identifier': 'articubot_one', 'dependencies': OrderedDict()}
+[0.001145] (custom_interfaces) JobQueued: {'identifier': 'custom_interfaces', 'dependencies': OrderedDict()}
+[0.001182] (onboarding_task1) JobQueued: {'identifier': 'onboarding_task1', 'dependencies': OrderedDict()}
+[0.001217] (waypoint_pub) JobQueued: {'identifier': 'waypoint_pub', 'dependencies': OrderedDict([('custom_interfaces', '/home/klo40/ESDA_onboarding/install/custom_interfaces')])}
+[0.001260] (custom_interfaces) JobStarted: {'identifier': 'custom_interfaces'}
+[0.008115] (articubot_one) JobStarted: {'identifier': 'articubot_one'}
+[0.011853] (onboarding_task1) JobStarted: {'identifier': 'onboarding_task1'}
+[0.022282] (custom_interfaces) JobProgress: {'identifier': 'custom_interfaces', 'progress': 'cmake'}
+[0.022616] (custom_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/klo40/ESDA_onboarding/custom_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/klo40/ESDA_onboarding/install/custom_interfaces'], 'cwd': '/home/klo40/ESDA_onboarding/build/custom_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'klo40'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/klo40'), ('OLDPWD', '/home/klo40'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('_colcon_cd_root', '/opt/ros/humble/'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'klo40'), ('NAME', 'Prayer'), ('WSL_INTEROP', '/run/WSL/2311_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Wolfram Research/WolframScript/:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Users/cj86k/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/cj86k/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '7'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/klo40/ESDA_onboarding/build/custom_interfaces'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.026756] (articubot_one) JobProgress: {'identifier': 'articubot_one', 'progress': 'cmake'}
+[0.027841] (articubot_one) Command: {'cmd': ['/usr/bin/cmake', '/home/klo40/ESDA_onboarding/articubot_one', '-DCMAKE_INSTALL_PREFIX=/home/klo40/ESDA_onboarding/install/articubot_one'], 'cwd': '/home/klo40/ESDA_onboarding/build/articubot_one', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'klo40'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/klo40'), ('OLDPWD', '/home/klo40'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('_colcon_cd_root', '/opt/ros/humble/'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'klo40'), ('NAME', 'Prayer'), ('WSL_INTEROP', '/run/WSL/2311_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Wolfram Research/WolframScript/:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Users/cj86k/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/cj86k/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '7'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/klo40/ESDA_onboarding/build/articubot_one'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.098582] (-) TimerEvent: {}
+[0.199397] (-) TimerEvent: {}
+[0.299898] (-) TimerEvent: {}
+[0.349823] (articubot_one) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.350097] (custom_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.400405] (-) TimerEvent: {}
+[0.502033] (-) TimerEvent: {}
+[0.602771] (-) TimerEvent: {}
+[0.703482] (-) TimerEvent: {}
+[0.805327] (-) TimerEvent: {}
+[0.843675] (onboarding_task1) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../build/onboarding_task1', 'build', '--build-base', '/home/klo40/ESDA_onboarding/build/onboarding_task1/build', 'install', '--record', '/home/klo40/ESDA_onboarding/build/onboarding_task1/install.log', '--single-version-externally-managed'], 'cwd': '/home/klo40/ESDA_onboarding/onboarding_task1', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'klo40', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/klo40', 'OLDPWD': '/home/klo40', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-22.04', '_colcon_cd_root': '/opt/ros/humble/', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'klo40', 'NAME': 'Prayer', 'WSL_INTEROP': '/run/WSL/2311_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '1', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Wolfram Research/WolframScript/:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Users/cj86k/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/cj86k/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_DOMAIN_ID': '7', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/klo40/ESDA_onboarding/build/onboarding_task1', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/klo40/ESDA_onboarding/build/onboarding_task1/prefix_override:/home/klo40/ESDA_onboarding/install/onboarding_task1/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'WSLENV': ''}, 'shell': False}
+[0.905548] (-) TimerEvent: {}
+[1.006265] (-) TimerEvent: {}
+[1.106854] (-) TimerEvent: {}
+[1.138193] (onboarding_task1) StdoutLine: {'line': b'running egg_info\n'}
+[1.140134] (onboarding_task1) StdoutLine: {'line': b'creating ../build/onboarding_task1/onboarding_task1.egg-info\n'}
+[1.142368] (onboarding_task1) StdoutLine: {'line': b'writing ../build/onboarding_task1/onboarding_task1.egg-info/PKG-INFO\n'}
+[1.143538] (onboarding_task1) StdoutLine: {'line': b'writing dependency_links to ../build/onboarding_task1/onboarding_task1.egg-info/dependency_links.txt\n'}
+[1.144248] (onboarding_task1) StdoutLine: {'line': b'writing entry points to ../build/onboarding_task1/onboarding_task1.egg-info/entry_points.txt\n'}
+[1.144503] (onboarding_task1) StdoutLine: {'line': b'writing requirements to ../build/onboarding_task1/onboarding_task1.egg-info/requires.txt\n'}
+[1.144799] (onboarding_task1) StdoutLine: {'line': b'writing top-level names to ../build/onboarding_task1/onboarding_task1.egg-info/top_level.txt\n'}
+[1.145287] (onboarding_task1) StdoutLine: {'line': b"writing manifest file '../build/onboarding_task1/onboarding_task1.egg-info/SOURCES.txt'\n"}
+[1.149713] (onboarding_task1) StdoutLine: {'line': b"reading manifest file '../build/onboarding_task1/onboarding_task1.egg-info/SOURCES.txt'\n"}
+[1.150820] (onboarding_task1) StdoutLine: {'line': b"writing manifest file '../build/onboarding_task1/onboarding_task1.egg-info/SOURCES.txt'\n"}
+[1.151361] (onboarding_task1) StdoutLine: {'line': b'running build\n'}
+[1.151773] (onboarding_task1) StdoutLine: {'line': b'running build_py\n'}
+[1.151915] (onboarding_task1) StdoutLine: {'line': b'creating /home/klo40/ESDA_onboarding/build/onboarding_task1/build\n'}
+[1.152183] (onboarding_task1) StdoutLine: {'line': b'creating /home/klo40/ESDA_onboarding/build/onboarding_task1/build/lib\n'}
+[1.152449] (onboarding_task1) StdoutLine: {'line': b'creating /home/klo40/ESDA_onboarding/build/onboarding_task1/build/lib/onboarding_task1\n'}
+[1.152925] (onboarding_task1) StdoutLine: {'line': b'copying onboarding_task1/control.py -> /home/klo40/ESDA_onboarding/build/onboarding_task1/build/lib/onboarding_task1\n'}
+[1.153208] (onboarding_task1) StdoutLine: {'line': b'copying onboarding_task1/sense.py -> /home/klo40/ESDA_onboarding/build/onboarding_task1/build/lib/onboarding_task1\n'}
+[1.153388] (onboarding_task1) StdoutLine: {'line': b'copying onboarding_task1/__init__.py -> /home/klo40/ESDA_onboarding/build/onboarding_task1/build/lib/onboarding_task1\n'}
+[1.153542] (onboarding_task1) StdoutLine: {'line': b'running install\n'}
+[1.154598] (onboarding_task1) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[1.154697] (onboarding_task1) StderrLine: {'line': b'  warnings.warn(\n'}
+[1.155093] (onboarding_task1) StdoutLine: {'line': b'running install_lib\n'}
+[1.156094] (onboarding_task1) StdoutLine: {'line': b'creating /home/klo40/ESDA_onboarding/install/onboarding_task1/lib/python3.10/site-packages/onboarding_task1\n'}
+[1.156745] (onboarding_task1) StdoutLine: {'line': b'copying /home/klo40/ESDA_onboarding/build/onboarding_task1/build/lib/onboarding_task1/control.py -> /home/klo40/ESDA_onboarding/install/onboarding_task1/lib/python3.10/site-packages/onboarding_task1\n'}
+[1.156961] (onboarding_task1) StdoutLine: {'line': b'copying /home/klo40/ESDA_onboarding/build/onboarding_task1/build/lib/onboarding_task1/sense.py -> /home/klo40/ESDA_onboarding/install/onboarding_task1/lib/python3.10/site-packages/onboarding_task1\n'}
+[1.157315] (onboarding_task1) StdoutLine: {'line': b'copying /home/klo40/ESDA_onboarding/build/onboarding_task1/build/lib/onboarding_task1/__init__.py -> /home/klo40/ESDA_onboarding/install/onboarding_task1/lib/python3.10/site-packages/onboarding_task1\n'}
+[1.158226] (onboarding_task1) StdoutLine: {'line': b'byte-compiling /home/klo40/ESDA_onboarding/install/onboarding_task1/lib/python3.10/site-packages/onboarding_task1/control.py to control.cpython-310.pyc\n'}
+[1.158993] (onboarding_task1) StdoutLine: {'line': b'byte-compiling /home/klo40/ESDA_onboarding/install/onboarding_task1/lib/python3.10/site-packages/onboarding_task1/sense.py to sense.cpython-310.pyc\n'}
+[1.159312] (onboarding_task1) StdoutLine: {'line': b'byte-compiling /home/klo40/ESDA_onboarding/install/onboarding_task1/lib/python3.10/site-packages/onboarding_task1/__init__.py to __init__.cpython-310.pyc\n'}
+[1.159477] (onboarding_task1) StdoutLine: {'line': b'running install_data\n'}
+[1.160230] (onboarding_task1) StdoutLine: {'line': b'creating /home/klo40/ESDA_onboarding/install/onboarding_task1/share/ament_index\n'}
+[1.160687] (onboarding_task1) StdoutLine: {'line': b'creating /home/klo40/ESDA_onboarding/install/onboarding_task1/share/ament_index/resource_index\n'}
+[1.160860] (onboarding_task1) StdoutLine: {'line': b'creating /home/klo40/ESDA_onboarding/install/onboarding_task1/share/ament_index/resource_index/packages\n'}
+[1.161151] (onboarding_task1) StdoutLine: {'line': b'copying resource/onboarding_task1 -> /home/klo40/ESDA_onboarding/install/onboarding_task1/share/ament_index/resource_index/packages\n'}
+[1.161480] (onboarding_task1) StdoutLine: {'line': b'copying package.xml -> /home/klo40/ESDA_onboarding/install/onboarding_task1/share/onboarding_task1\n'}
+[1.161644] (onboarding_task1) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.164809] (onboarding_task1) StdoutLine: {'line': b'Copying ../build/onboarding_task1/onboarding_task1.egg-info to /home/klo40/ESDA_onboarding/install/onboarding_task1/lib/python3.10/site-packages/onboarding_task1-0.0.0-py3.10.egg-info\n'}
+[1.167127] (onboarding_task1) StdoutLine: {'line': b'running install_scripts\n'}
+[1.204561] (onboarding_task1) StdoutLine: {'line': b'Installing control_publisher script to /home/klo40/ESDA_onboarding/install/onboarding_task1/lib/onboarding_task1\n'}
+[1.205974] (onboarding_task1) StdoutLine: {'line': b"writing list of installed files to '/home/klo40/ESDA_onboarding/build/onboarding_task1/install.log'\n"}
+[1.206938] (-) TimerEvent: {}
+[1.264494] (onboarding_task1) CommandEnded: {'returncode': 0}
+[1.271766] (articubot_one) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.272389] (custom_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.283398] (onboarding_task1) JobEnded: {'identifier': 'onboarding_task1', 'rc': 0}
+[1.307171] (-) TimerEvent: {}
+[1.408347] (-) TimerEvent: {}
+[1.510000] (-) TimerEvent: {}
+[1.611081] (-) TimerEvent: {}
+[1.711632] (-) TimerEvent: {}
+[1.812309] (-) TimerEvent: {}
+[1.890686] (articubot_one) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.896704] (custom_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.912514] (-) TimerEvent: {}
+[2.013080] (-) TimerEvent: {}
+[2.097471] (custom_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.103452] (articubot_one) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.106651] (custom_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.108449] (custom_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.109423] (custom_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.109957] (articubot_one) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.110169] (articubot_one) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.110463] (articubot_one) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.113167] (-) TimerEvent: {}
+[2.113404] (articubot_one) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.113670] (custom_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.213486] (-) TimerEvent: {}
+[2.314220] (-) TimerEvent: {}
+[2.338984] (custom_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.341759] (articubot_one) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.345978] (custom_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.346450] (custom_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.346826] (custom_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.350352] (articubot_one) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.350802] (articubot_one) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.351136] (articubot_one) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.355356] (articubot_one) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.355496] (custom_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.414305] (-) TimerEvent: {}
+[2.514717] (-) TimerEvent: {}
+[2.533255] (articubot_one) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[2.538488] (custom_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[2.615004] (-) TimerEvent: {}
+[2.667727] (articubot_one) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.7 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.667951] (custom_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[2.674498] (custom_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.686193] (custom_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.715143] (-) TimerEvent: {}
+[2.784210] (articubot_one) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[2.788866] (articubot_one) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.790827] (articubot_one) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.792407] (articubot_one) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[2.795005] (articubot_one) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.798307] (articubot_one) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.803176] (articubot_one) StdoutLine: {'line': b'-- Generating done\n'}
+[2.805648] (articubot_one) StdoutLine: {'line': b'-- Build files have been written to: /home/klo40/ESDA_onboarding/build/articubot_one\n'}
+[2.815445] (-) TimerEvent: {}
+[2.817483] (articubot_one) CommandEnded: {'returncode': 0}
+[2.818606] (articubot_one) JobProgress: {'identifier': 'articubot_one', 'progress': 'build'}
+[2.820137] (articubot_one) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/klo40/ESDA_onboarding/build/articubot_one', '--', '-j8', '-l8'], 'cwd': '/home/klo40/ESDA_onboarding/build/articubot_one', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'klo40'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/klo40'), ('OLDPWD', '/home/klo40'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('_colcon_cd_root', '/opt/ros/humble/'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'klo40'), ('NAME', 'Prayer'), ('WSL_INTEROP', '/run/WSL/2311_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Wolfram Research/WolframScript/:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Users/cj86k/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/cj86k/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '7'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/klo40/ESDA_onboarding/build/articubot_one'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.873602] (articubot_one) CommandEnded: {'returncode': 0}
+[2.895518] (articubot_one) JobProgress: {'identifier': 'articubot_one', 'progress': 'install'}
+[2.905918] (articubot_one) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/klo40/ESDA_onboarding/build/articubot_one'], 'cwd': '/home/klo40/ESDA_onboarding/build/articubot_one', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'klo40'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/klo40'), ('OLDPWD', '/home/klo40'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('_colcon_cd_root', '/opt/ros/humble/'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'klo40'), ('NAME', 'Prayer'), ('WSL_INTEROP', '/run/WSL/2311_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Wolfram Research/WolframScript/:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Users/cj86k/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/cj86k/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '7'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/klo40/ESDA_onboarding/build/articubot_one'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.915010] (articubot_one) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.915519] (-) TimerEvent: {}
+[2.915860] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/config\n'}
+[2.916099] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/config/drive_bot.rviz\n'}
+[2.916152] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/config/view_bot.rviz\n'}
+[2.916204] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/config/empty.yaml\n'}
+[2.916345] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/description\n'}
+[2.916599] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/description/robot_core.xacro\n'}
+[2.916845] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/description/robot.urdf.xacro\n'}
+[2.917060] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/description/gazebo_control.xacro\n'}
+[2.917341] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/description/lidar.xacro\n'}
+[2.917596] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/description/intertial_macros.xacro\n'}
+[2.917923] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/description/inertial_macros.xacro\n'}
+[2.918167] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/launch\n'}
+[2.918395] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/launch/launch_sim.launch.py\n'}
+[2.918695] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/launch/rsp.launch.py\n'}
+[2.918775] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/worlds\n'}
+[2.918905] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/worlds/obstacles2.world\n'}
+[2.919092] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/worlds/empty.world\n'}
+[2.919216] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/worlds/obstacles.world\n'}
+[2.919476] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/ament_index/resource_index/package_run_dependencies/articubot_one\n'}
+[2.919542] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/ament_index/resource_index/parent_prefix_path/articubot_one\n'}
+[2.919600] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/environment/ament_prefix_path.sh\n'}
+[2.919803] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/environment/ament_prefix_path.dsv\n'}
+[2.919903] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/environment/path.sh\n'}
+[2.920114] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/environment/path.dsv\n'}
+[2.920352] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/local_setup.bash\n'}
+[2.920698] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/local_setup.sh\n'}
+[2.920843] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/local_setup.zsh\n'}
+[2.921059] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/local_setup.dsv\n'}
+[2.921256] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/package.dsv\n'}
+[2.921539] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/ament_index/resource_index/packages/articubot_one\n'}
+[2.921782] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/cmake/articubot_oneConfig.cmake\n'}
+[2.921846] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/cmake/articubot_oneConfig-version.cmake\n'}
+[2.922037] (articubot_one) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/package.xml\n'}
+[2.926140] (articubot_one) CommandEnded: {'returncode': 0}
+[2.975503] (articubot_one) JobEnded: {'identifier': 'articubot_one', 'rc': 0}
+[3.015825] (-) TimerEvent: {}
+[3.085246] (custom_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.116222] (-) TimerEvent: {}
+[3.217041] (-) TimerEvent: {}
+[3.318220] (-) TimerEvent: {}
+[3.401172] (custom_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[3.418347] (-) TimerEvent: {}
+[3.518807] (-) TimerEvent: {}
+[3.585334] (custom_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.619030] (-) TimerEvent: {}
+[3.719382] (-) TimerEvent: {}
+[3.817655] (custom_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.819499] (-) TimerEvent: {}
+[3.919900] (-) TimerEvent: {}
+[4.020580] (-) TimerEvent: {}
+[4.121135] (-) TimerEvent: {}
+[4.211760] (custom_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[4.215866] (custom_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[4.221529] (-) TimerEvent: {}
+[4.322028] (-) TimerEvent: {}
+[4.422712] (-) TimerEvent: {}
+[4.523696] (-) TimerEvent: {}
+[4.624427] (-) TimerEvent: {}
+[4.725085] (-) TimerEvent: {}
+[4.825956] (-) TimerEvent: {}
+[4.926529] (-) TimerEvent: {}
+[5.026979] (-) TimerEvent: {}
+[5.127693] (-) TimerEvent: {}
+[5.228623] (-) TimerEvent: {}
+[5.329182] (-) TimerEvent: {}
+[5.429906] (-) TimerEvent: {}
+[5.530878] (-) TimerEvent: {}
+[5.566189] (custom_interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[5.567323] (custom_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[5.567530] (custom_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[5.567631] (custom_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[5.592101] (custom_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[5.630933] (-) TimerEvent: {}
+[5.731359] (-) TimerEvent: {}
+[5.801850] (custom_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.7 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[5.831506] (-) TimerEvent: {}
+[5.836566] (custom_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.838259] (custom_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.843023] (custom_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.898215] (custom_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[5.900382] (custom_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/klo40/ESDA_onboarding/build/custom_interfaces\n'}
+[5.907283] (custom_interfaces) CommandEnded: {'returncode': 0}
+[5.908122] (custom_interfaces) JobProgress: {'identifier': 'custom_interfaces', 'progress': 'build'}
+[5.908827] (custom_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/klo40/ESDA_onboarding/build/custom_interfaces', '--', '-j8', '-l8'], 'cwd': '/home/klo40/ESDA_onboarding/build/custom_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'klo40'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/klo40'), ('OLDPWD', '/home/klo40'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('_colcon_cd_root', '/opt/ros/humble/'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'klo40'), ('NAME', 'Prayer'), ('WSL_INTEROP', '/run/WSL/2311_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Wolfram Research/WolframScript/:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Users/cj86k/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/cj86k/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '7'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/klo40/ESDA_onboarding/build/custom_interfaces'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[5.931777] (-) TimerEvent: {}
+[5.953840] (custom_interfaces) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[5.964632] (custom_interfaces) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[5.997664] (custom_interfaces) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_copy_custom_interfaces\n'}
+[6.031882] (-) TimerEvent: {}
+[6.132368] (-) TimerEvent: {}
+[6.232846] (-) TimerEvent: {}
+[6.333598] (-) TimerEvent: {}
+[6.400541] (custom_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[6.401744] (custom_interfaces) StdoutLine: {'line': b'creating custom_interfaces.egg-info\n'}
+[6.402230] (custom_interfaces) StdoutLine: {'line': b'writing custom_interfaces.egg-info/PKG-INFO\n'}
+[6.402435] (custom_interfaces) StdoutLine: {'line': b'writing dependency_links to custom_interfaces.egg-info/dependency_links.txt\n'}
+[6.402618] (custom_interfaces) StdoutLine: {'line': b'writing top-level names to custom_interfaces.egg-info/top_level.txt\n'}
+[6.402906] (custom_interfaces) StdoutLine: {'line': b"writing manifest file 'custom_interfaces.egg-info/SOURCES.txt'\n"}
+[6.405700] (custom_interfaces) StdoutLine: {'line': b"reading manifest file 'custom_interfaces.egg-info/SOURCES.txt'\n"}
+[6.408734] (custom_interfaces) StdoutLine: {'line': b"writing manifest file 'custom_interfaces.egg-info/SOURCES.txt'\n"}
+[6.433862] (-) TimerEvent: {}
+[6.439198] (custom_interfaces) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/msg/detail/waypoint__functions.c.o\x1b[0m\n'}
+[6.439826] (custom_interfaces) StdoutLine: {'line': b'[  9%] Built target custom_interfaces__cpp\n'}
+[6.449769] (custom_interfaces) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[6.450431] (custom_interfaces) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[6.450520] (custom_interfaces) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[6.472225] (custom_interfaces) StdoutLine: {'line': b'[ 19%] Built target ament_cmake_python_build_custom_interfaces_egg\n'}
+[6.534055] (-) TimerEvent: {}
+[6.560071] (custom_interfaces) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libcustom_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[6.634195] (-) TimerEvent: {}
+[6.735310] (-) TimerEvent: {}
+[6.836225] (-) TimerEvent: {}
+[6.870430] (custom_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_interfaces/msg/waypoint__type_support.cpp.o\x1b[0m\n'}
+[6.919524] (custom_interfaces) StdoutLine: {'line': b'[ 25%] Built target custom_interfaces__rosidl_generator_c\n'}
+[6.933838] (custom_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[6.934888] (custom_interfaces) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[6.936501] (-) TimerEvent: {}
+[6.937516] (custom_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[6.939338] (custom_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/waypoint__type_support.cpp.o\x1b[0m\n'}
+[6.940600] (custom_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/waypoint__type_support.cpp.o\x1b[0m\n'}
+[7.036680] (-) TimerEvent: {}
+[7.137178] (-) TimerEvent: {}
+[7.238031] (-) TimerEvent: {}
+[7.338700] (-) TimerEvent: {}
+[7.342689] (custom_interfaces) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interfaces/msg/waypoint__type_support.cpp.o\x1b[0m\n'}
+[7.396661] (custom_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[7.396951] (custom_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/waypoint__type_support_c.cpp.o\x1b[0m\n'}
+[7.420553] (custom_interfaces) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding C object CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/waypoint__type_support.c.o\x1b[0m\n'}
+[7.438966] (-) TimerEvent: {}
+[7.509802] (custom_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking C shared library libcustom_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[7.510539] (custom_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[7.539458] (-) TimerEvent: {}
+[7.642237] (-) TimerEvent: {}
+[7.743132] (-) TimerEvent: {}
+[7.840321] (custom_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[7.843346] (-) TimerEvent: {}
+[7.875095] (custom_interfaces) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[7.893175] (custom_interfaces) StdoutLine: {'line': b'[ 67%] Built target custom_interfaces__rosidl_typesupport_introspection_c\n'}
+[7.923440] (custom_interfaces) StdoutLine: {'line': b'[ 67%] Built target custom_interfaces__rosidl_typesupport_cpp\n'}
+[7.935676] (custom_interfaces) StdoutLine: {'line': b'[ 67%] Built target custom_interfaces__rosidl_typesupport_c\n'}
+[7.943622] (-) TimerEvent: {}
+[8.044820] (-) TimerEvent: {}
+[8.150467] (-) TimerEvent: {}
+[8.151058] (custom_interfaces) StdoutLine: {'line': b'[ 67%] Built target custom_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[8.251460] (-) TimerEvent: {}
+[8.280978] (custom_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[8.317113] (custom_interfaces) StdoutLine: {'line': b'[ 70%] Built target custom_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[8.351798] (-) TimerEvent: {}
+[8.452846] (-) TimerEvent: {}
+[8.553782] (-) TimerEvent: {}
+[8.654603] (-) TimerEvent: {}
+[8.708465] (custom_interfaces) StdoutLine: {'line': b'[ 70%] Built target custom_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[8.733350] (custom_interfaces) StdoutLine: {'line': b'[ 70%] Built target custom_interfaces\n'}
+[8.752572] (custom_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[8.754704] (-) TimerEvent: {}
+[8.855429] (-) TimerEvent: {}
+[8.955974] (-) TimerEvent: {}
+[9.056335] (-) TimerEvent: {}
+[9.156881] (-) TimerEvent: {}
+[9.212866] (custom_interfaces) StdoutLine: {'line': b'[ 74%] Built target custom_interfaces__py\n'}
+[9.242455] (custom_interfaces) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/msg/_waypoint_s.c.o\x1b[0m\n'}
+[9.257066] (-) TimerEvent: {}
+[9.357675] (-) TimerEvent: {}
+[9.458380] (-) TimerEvent: {}
+[9.483164] (custom_interfaces) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_interfaces/libcustom_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[9.558503] (-) TimerEvent: {}
+[9.659263] (-) TimerEvent: {}
+[9.760351] (-) TimerEvent: {}
+[9.834707] (custom_interfaces) StdoutLine: {'line': b'[ 80%] Built target custom_interfaces__rosidl_generator_py\n'}
+[9.855952] (custom_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[9.856295] (custom_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/custom_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[9.857314] (custom_interfaces) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[9.860417] (-) TimerEvent: {}
+[9.949747] (custom_interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_interfaces/custom_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[9.954863] (custom_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_interfaces/custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[9.955212] (custom_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_interfaces/custom_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[9.961188] (-) TimerEvent: {}
+[10.062036] (-) TimerEvent: {}
+[10.147843] (custom_interfaces) StdoutLine: {'line': b'[100%] Built target custom_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[10.148810] (custom_interfaces) StdoutLine: {'line': b'[100%] Built target custom_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[10.149091] (custom_interfaces) StdoutLine: {'line': b'[100%] Built target custom_interfaces__rosidl_typesupport_c__pyext\n'}
+[10.159924] (custom_interfaces) CommandEnded: {'returncode': 0}
+[10.162517] (-) TimerEvent: {}
+[10.209941] (custom_interfaces) JobProgress: {'identifier': 'custom_interfaces', 'progress': 'install'}
+[10.210753] (custom_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/klo40/ESDA_onboarding/build/custom_interfaces'], 'cwd': '/home/klo40/ESDA_onboarding/build/custom_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'klo40'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/klo40'), ('OLDPWD', '/home/klo40'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('_colcon_cd_root', '/opt/ros/humble/'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'klo40'), ('NAME', 'Prayer'), ('WSL_INTEROP', '/run/WSL/2311_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Wolfram Research/WolframScript/:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Users/cj86k/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/cj86k/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '7'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/klo40/ESDA_onboarding/build/custom_interfaces'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[10.219707] (custom_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.220046] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/ament_index/resource_index/rosidl_interfaces/custom_interfaces\n'}
+[10.220210] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[10.220473] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[10.220741] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[10.220878] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail\n'}
+[10.221051] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/waypoint__type_support.h\n'}
+[10.221106] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/waypoint__functions.h\n'}
+[10.221152] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/waypoint__struct.h\n'}
+[10.221198] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/waypoint__functions.c\n'}
+[10.221243] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/waypoint.h\n'}
+[10.221376] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/environment/library_path.sh\n'}
+[10.221432] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/environment/library_path.dsv\n'}
+[10.221541] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_c.so\n'}
+[10.221720] (custom_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/klo40/ESDA_onboarding/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_c.so" to ""\n'}
+[10.221941] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/klo40/ESDA_onboarding/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[10.222003] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/klo40/ESDA_onboarding/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[10.222137] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[10.222275] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/klo40/ESDA_onboarding/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail\n'}
+[10.222410] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/waypoint__rosidl_typesupport_fastrtps_c.h\n'}
+[10.222643] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[10.222704] (custom_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/klo40/ESDA_onboarding/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[10.222844] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/klo40/ESDA_onboarding/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[10.222995] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/klo40/ESDA_onboarding/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[10.223189] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[10.223420] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/klo40/ESDA_onboarding/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail\n'}
+[10.223849] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/waypoint__rosidl_typesupport_introspection_c.h\n'}
+[10.224245] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/waypoint__type_support.c\n'}
+[10.224306] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[10.224455] (custom_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/klo40/ESDA_onboarding/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[10.224595] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_c.so\n'}
+[10.224734] (custom_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/klo40/ESDA_onboarding/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[10.224874] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/klo40/ESDA_onboarding/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[10.224977] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/klo40/ESDA_onboarding/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[10.225174] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/waypoint.hpp\n'}
+[10.225535] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/klo40/ESDA_onboarding/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail\n'}
+[10.225654] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/waypoint__struct.hpp\n'}
+[10.225737] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/waypoint__traits.hpp\n'}
+[10.225926] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/waypoint__builder.hpp\n'}
+[10.226117] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/klo40/ESDA_onboarding/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[10.226293] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/klo40/ESDA_onboarding/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[10.226347] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[10.226401] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/klo40/ESDA_onboarding/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail\n'}
+[10.226525] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/dds_fastrtps\n'}
+[10.226670] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/waypoint__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[10.226843] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[10.227101] (custom_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/klo40/ESDA_onboarding/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[10.227186] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/klo40/ESDA_onboarding/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[10.227234] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/klo40/ESDA_onboarding/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[10.227299] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/klo40/ESDA_onboarding/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail\n'}
+[10.227363] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/waypoint__rosidl_typesupport_introspection_cpp.hpp\n'}
+[10.227437] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/waypoint__type_support.cpp\n'}
+[10.227515] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[10.227635] (custom_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/klo40/ESDA_onboarding/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[10.227714] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_cpp.so\n'}
+[10.227779] (custom_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/klo40/ESDA_onboarding/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[10.227847] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/environment/pythonpath.sh\n'}
+[10.227918] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/environment/pythonpath.dsv\n'}
+[10.228131] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info\n'}
+[10.228482] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[10.229106] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[10.229181] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[10.229229] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[10.229300] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces\n'}
+[10.229515] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[10.229720] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/libcustom_interfaces__rosidl_generator_py.so\n'}
+[10.230060] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg\n'}
+[10.230364] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/_waypoint.py\n'}
+[10.230476] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/_waypoint_s.c\n'}
+[10.230644] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/__init__.py\n'}
+[10.230874] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[10.231477] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[10.231740] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[10.231984] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[10.232192] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[10.232335] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/__init__.py\n'}
+[10.262824] (-) TimerEvent: {}
+[10.272691] (custom_interfaces) StdoutLine: {'line': b"Listing '/home/klo40/ESDA_onboarding/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces'...\n"}
+[10.272869] (custom_interfaces) StdoutLine: {'line': b"Compiling '/home/klo40/ESDA_onboarding/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/__init__.py'...\n"}
+[10.272932] (custom_interfaces) StdoutLine: {'line': b"Listing '/home/klo40/ESDA_onboarding/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg'...\n"}
+[10.272989] (custom_interfaces) StdoutLine: {'line': b"Compiling '/home/klo40/ESDA_onboarding/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/__init__.py'...\n"}
+[10.273044] (custom_interfaces) StdoutLine: {'line': b"Compiling '/home/klo40/ESDA_onboarding/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/_waypoint.py'...\n"}
+[10.280796] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[10.281243] (custom_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/klo40/ESDA_onboarding/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[10.281751] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[10.282116] (custom_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/klo40/ESDA_onboarding/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[10.282528] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[10.282932] (custom_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/klo40/ESDA_onboarding/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[10.283290] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_py.so\n'}
+[10.283698] (custom_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/klo40/ESDA_onboarding/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_py.so" to ""\n'}
+[10.283851] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/msg/Waypoint.idl\n'}
+[10.284166] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/msg/Waypoint.msg\n'}
+[10.284437] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/ament_index/resource_index/package_run_dependencies/custom_interfaces\n'}
+[10.284825] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/ament_index/resource_index/parent_prefix_path/custom_interfaces\n'}
+[10.285012] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/environment/ament_prefix_path.sh\n'}
+[10.285193] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/environment/ament_prefix_path.dsv\n'}
+[10.285534] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/environment/path.sh\n'}
+[10.285723] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/environment/path.dsv\n'}
+[10.286150] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/local_setup.bash\n'}
+[10.286329] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/local_setup.sh\n'}
+[10.286546] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/local_setup.zsh\n'}
+[10.286729] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/local_setup.dsv\n'}
+[10.286943] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/package.dsv\n'}
+[10.287026] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/ament_index/resource_index/packages/custom_interfaces\n'}
+[10.287172] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cExport.cmake\n'}
+[10.287399] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[10.287712] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[10.288020] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[10.288092] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[10.288145] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[10.288385] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[10.288529] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[10.288779] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cppExport.cmake\n'}
+[10.288849] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[10.288904] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[10.289028] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[10.289233] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[10.289457] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[10.289525] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[10.289668] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_pyExport.cmake\n'}
+[10.289846] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[10.290124] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[10.290232] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[10.290389] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[10.290682] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[10.290767] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[10.291011] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[10.291166] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[10.291326] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfacesConfig.cmake\n'}
+[10.291395] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfacesConfig-version.cmake\n'}
+[10.291646] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/package.xml\n'}
+[10.293942] (custom_interfaces) CommandEnded: {'returncode': 0}
+[10.362999] (-) TimerEvent: {}
+[10.389160] (custom_interfaces) JobEnded: {'identifier': 'custom_interfaces', 'rc': 0}
+[10.394854] (waypoint_pub) JobStarted: {'identifier': 'waypoint_pub'}
+[10.463311] (-) TimerEvent: {}
+[10.564084] (-) TimerEvent: {}
+[10.664858] (-) TimerEvent: {}
+[10.765399] (-) TimerEvent: {}
+[10.865972] (-) TimerEvent: {}
+[10.966655] (-) TimerEvent: {}
+[11.067661] (-) TimerEvent: {}
+[11.169023] (-) TimerEvent: {}
+[11.269969] (-) TimerEvent: {}
+[11.370413] (-) TimerEvent: {}
+[11.470833] (-) TimerEvent: {}
+[11.571175] (-) TimerEvent: {}
+[11.671562] (-) TimerEvent: {}
+[11.753416] (waypoint_pub) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../build/waypoint_pub', 'build', '--build-base', '/home/klo40/ESDA_onboarding/build/waypoint_pub/build', 'install', '--record', '/home/klo40/ESDA_onboarding/build/waypoint_pub/install.log', '--single-version-externally-managed'], 'cwd': '/home/klo40/ESDA_onboarding/waypoint_pub', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'klo40', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/klo40/ESDA_onboarding/install/custom_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/klo40', 'OLDPWD': '/home/klo40', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-22.04', '_colcon_cd_root': '/opt/ros/humble/', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'klo40', 'NAME': 'Prayer', 'WSL_INTEROP': '/run/WSL/2311_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '1', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Wolfram Research/WolframScript/:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/Users/cj86k/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/cj86k/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_DOMAIN_ID': '7', 'AMENT_PREFIX_PATH': '/home/klo40/ESDA_onboarding/install/custom_interfaces:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/klo40/ESDA_onboarding/build/waypoint_pub', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/klo40/ESDA_onboarding/build/waypoint_pub/prefix_override:/home/klo40/ESDA_onboarding/install/waypoint_pub/lib/python3.10/site-packages:/home/klo40/ESDA_onboarding/install/custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'WSLENV': '', 'CMAKE_PREFIX_PATH': '/home/klo40/ESDA_onboarding/install/custom_interfaces'}, 'shell': False}
+[11.771718] (-) TimerEvent: {}
+[11.872136] (-) TimerEvent: {}
+[11.972523] (-) TimerEvent: {}
+[12.024308] (waypoint_pub) StdoutLine: {'line': b'running egg_info\n'}
+[12.024940] (waypoint_pub) StdoutLine: {'line': b'creating ../build/waypoint_pub/waypoint_pub.egg-info\n'}
+[12.025405] (waypoint_pub) StdoutLine: {'line': b'writing ../build/waypoint_pub/waypoint_pub.egg-info/PKG-INFO\n'}
+[12.026033] (waypoint_pub) StdoutLine: {'line': b'writing dependency_links to ../build/waypoint_pub/waypoint_pub.egg-info/dependency_links.txt\n'}
+[12.026344] (waypoint_pub) StdoutLine: {'line': b'writing entry points to ../build/waypoint_pub/waypoint_pub.egg-info/entry_points.txt\n'}
+[12.026629] (waypoint_pub) StdoutLine: {'line': b'writing requirements to ../build/waypoint_pub/waypoint_pub.egg-info/requires.txt\n'}
+[12.026740] (waypoint_pub) StdoutLine: {'line': b'writing top-level names to ../build/waypoint_pub/waypoint_pub.egg-info/top_level.txt\n'}
+[12.027331] (waypoint_pub) StdoutLine: {'line': b"writing manifest file '../build/waypoint_pub/waypoint_pub.egg-info/SOURCES.txt'\n"}
+[12.031620] (waypoint_pub) StdoutLine: {'line': b"reading manifest file '../build/waypoint_pub/waypoint_pub.egg-info/SOURCES.txt'\n"}
+[12.032381] (waypoint_pub) StdoutLine: {'line': b"writing manifest file '../build/waypoint_pub/waypoint_pub.egg-info/SOURCES.txt'\n"}
+[12.032762] (waypoint_pub) StdoutLine: {'line': b'running build\n'}
+[12.033091] (waypoint_pub) StdoutLine: {'line': b'running build_py\n'}
+[12.033261] (waypoint_pub) StdoutLine: {'line': b'creating /home/klo40/ESDA_onboarding/build/waypoint_pub/build\n'}
+[12.033539] (waypoint_pub) StdoutLine: {'line': b'creating /home/klo40/ESDA_onboarding/build/waypoint_pub/build/lib\n'}
+[12.033653] (waypoint_pub) StdoutLine: {'line': b'creating /home/klo40/ESDA_onboarding/build/waypoint_pub/build/lib/waypoint_pub\n'}
+[12.033794] (waypoint_pub) StdoutLine: {'line': b'copying waypoint_pub/waypoint_publisher.py -> /home/klo40/ESDA_onboarding/build/waypoint_pub/build/lib/waypoint_pub\n'}
+[12.034023] (waypoint_pub) StdoutLine: {'line': b'copying waypoint_pub/__init__.py -> /home/klo40/ESDA_onboarding/build/waypoint_pub/build/lib/waypoint_pub\n'}
+[12.034222] (waypoint_pub) StdoutLine: {'line': b'running install\n'}
+[12.034486] (waypoint_pub) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[12.034643] (waypoint_pub) StderrLine: {'line': b'  warnings.warn(\n'}
+[12.035034] (waypoint_pub) StdoutLine: {'line': b'running install_lib\n'}
+[12.036287] (waypoint_pub) StdoutLine: {'line': b'creating /home/klo40/ESDA_onboarding/install/waypoint_pub/lib/python3.10/site-packages/waypoint_pub\n'}
+[12.036710] (waypoint_pub) StdoutLine: {'line': b'copying /home/klo40/ESDA_onboarding/build/waypoint_pub/build/lib/waypoint_pub/waypoint_publisher.py -> /home/klo40/ESDA_onboarding/install/waypoint_pub/lib/python3.10/site-packages/waypoint_pub\n'}
+[12.036975] (waypoint_pub) StdoutLine: {'line': b'copying /home/klo40/ESDA_onboarding/build/waypoint_pub/build/lib/waypoint_pub/__init__.py -> /home/klo40/ESDA_onboarding/install/waypoint_pub/lib/python3.10/site-packages/waypoint_pub\n'}
+[12.037801] (waypoint_pub) StdoutLine: {'line': b'byte-compiling /home/klo40/ESDA_onboarding/install/waypoint_pub/lib/python3.10/site-packages/waypoint_pub/waypoint_publisher.py to waypoint_publisher.cpython-310.pyc\n'}
+[12.038489] (waypoint_pub) StdoutLine: {'line': b'byte-compiling /home/klo40/ESDA_onboarding/install/waypoint_pub/lib/python3.10/site-packages/waypoint_pub/__init__.py to __init__.cpython-310.pyc\n'}
+[12.038663] (waypoint_pub) StdoutLine: {'line': b'running install_data\n'}
+[12.039369] (waypoint_pub) StdoutLine: {'line': b'creating /home/klo40/ESDA_onboarding/install/waypoint_pub/share/ament_index\n'}
+[12.039608] (waypoint_pub) StdoutLine: {'line': b'creating /home/klo40/ESDA_onboarding/install/waypoint_pub/share/ament_index/resource_index\n'}
+[12.039662] (waypoint_pub) StdoutLine: {'line': b'creating /home/klo40/ESDA_onboarding/install/waypoint_pub/share/ament_index/resource_index/packages\n'}
+[12.039781] (waypoint_pub) StdoutLine: {'line': b'copying resource/waypoint_pub -> /home/klo40/ESDA_onboarding/install/waypoint_pub/share/ament_index/resource_index/packages\n'}
+[12.039833] (waypoint_pub) StdoutLine: {'line': b'copying package.xml -> /home/klo40/ESDA_onboarding/install/waypoint_pub/share/waypoint_pub\n'}
+[12.039986] (waypoint_pub) StdoutLine: {'line': b'running install_egg_info\n'}
+[12.041273] (waypoint_pub) StdoutLine: {'line': b'Copying ../build/waypoint_pub/waypoint_pub.egg-info to /home/klo40/ESDA_onboarding/install/waypoint_pub/lib/python3.10/site-packages/waypoint_pub-0.0.0-py3.10.egg-info\n'}
+[12.042152] (waypoint_pub) StdoutLine: {'line': b'running install_scripts\n'}
+[12.069773] (waypoint_pub) StdoutLine: {'line': b'Installing waypoint_pub script to /home/klo40/ESDA_onboarding/install/waypoint_pub/lib/waypoint_pub\n'}
+[12.071229] (waypoint_pub) StdoutLine: {'line': b"writing list of installed files to '/home/klo40/ESDA_onboarding/build/waypoint_pub/install.log'\n"}
+[12.072684] (-) TimerEvent: {}
+[12.114939] (waypoint_pub) CommandEnded: {'returncode': 0}
+[12.126055] (waypoint_pub) JobEnded: {'identifier': 'waypoint_pub', 'rc': 0}
+[12.128821] (-) EventReactorShutdown: {}

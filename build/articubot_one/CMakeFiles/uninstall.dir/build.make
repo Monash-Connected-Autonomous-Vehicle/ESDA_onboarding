@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yentung-yen/mcav/ESDA_onboarding/articubot_one
+CMAKE_SOURCE_DIR = /home/klo40/ESDA_onboarding/articubot_one
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yentung-yen/mcav/ESDA_onboarding/build/articubot_one
+CMAKE_BINARY_DIR = /home/klo40/ESDA_onboarding/build/articubot_one
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/yentung-yen/mcav/ESDA_onboarding/build/articubot_one && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yentung-yen/mcav/ESDA_onboarding/articubot_one /home/yentung-yen/mcav/ESDA_onboarding/articubot_one /home/yentung-yen/mcav/ESDA_onboarding/build/articubot_one /home/yentung-yen/mcav/ESDA_onboarding/build/articubot_one /home/yentung-yen/mcav/ESDA_onboarding/build/articubot_one/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/klo40/ESDA_onboarding/build/articubot_one && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/klo40/ESDA_onboarding/articubot_one /home/klo40/ESDA_onboarding/articubot_one /home/klo40/ESDA_onboarding/build/articubot_one /home/klo40/ESDA_onboarding/build/articubot_one /home/klo40/ESDA_onboarding/build/articubot_one/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

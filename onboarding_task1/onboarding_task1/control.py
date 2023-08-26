@@ -7,7 +7,7 @@ class MinimalPublisher(Node):
         super().__init__('minimal_publisher')
 
         # create publisher which sends mesg to '/simulated_vehicle/cmd_vel' topic
-        self.publisher_ = self.create_publisher(Twist, '/simulated_vehicle/cmd_vel', 10)
+        self.publisher_ = self.create_publisher(Twist, '/cmd_vel', 10)
         timer_period = 5  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
         self.i = 0
