@@ -2,15 +2,17 @@ import rclpy
 from rclpy.node import Node
 
 from geometry_msgs.msg import Twist
+from geographic_msgs.msg import WayPoint
 
 
 class MinimalPublisher(Node):
 
     def __init__(self):
         super().__init__('minimal_publisher')
+        self.subscription = self.create_subscription(Waypoint, '/global_waypoint', self.lets_go, 10)
         self.publisher_ = self.create_publisher(Twist, '/cmd_vel', 10)
 
-    def timer_callback(self):
+    def lets_go(self):
         msg = Twist()
         msg.linear.x = 24.0
         msg.angular.z = 0.0
