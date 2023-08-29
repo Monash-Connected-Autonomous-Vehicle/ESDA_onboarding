@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>waypoint_pub</name>
+  <name>laser_to_grid</name>
   <version>0.0.0</version>
-  <description>Provides a simple node for publishing a waypoint with x, y, z and a radius</description>
+  <description>TODO: Package description</description>
   <maintainer email="s.a.baaset.moslih@gmail.com">mcav</maintainer>
   <license>TODO: License declaration</license>
 
@@ -13,9 +13,6 @@
   <test_depend>python3-pytest</test_depend>
   
   <exec_depend>rclpy</exec_depend>
-  
-  <build_depend>custom_interfaces</build_depend>
-  <exec_depend>custom_interfaces</exec_depend>
 
   <export>
     <build_type>ament_python</build_type>
