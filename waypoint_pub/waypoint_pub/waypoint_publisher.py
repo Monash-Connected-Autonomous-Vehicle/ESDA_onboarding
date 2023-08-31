@@ -8,7 +8,7 @@ class WaypointPublisher(Node):
 
     def __init__(self):
         super().__init__('waypoint_publisher')
-        self.publisher_ = self.create_publisher(Waypoint, 'global_waypoint', 1)
+        self.publisher_ = self.create_publisher(Waypoint, '/global_waypoint', 1)
         
         ONE_SECOND = 1
         self.timer = self.create_timer(ONE_SECOND, self.waypoint_callback)

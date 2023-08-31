@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'scan = onboarding_task.sense:main',
+            'scan = onboarding_task.scan:main',
+            'control = onboarding_task.control:main',
         ],
     },
 )
