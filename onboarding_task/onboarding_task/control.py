@@ -24,17 +24,18 @@ class MinimalPublisher(Node):
 
         twist_msg = Twist()
 
+        # this is the angle between the current cord and target cord
+        target_angle = round(math.atan2(self.pos_y - cur_pos_y, self.pos_x - cur_pos_x), 2)
+        # this is the angle of the car currently is facing
+        car_angle = round(self.quaternion_to_angle(odom_msg.pose.pose.orientation), 2)
+
         # when we are at the target waypoint
         distance_wp = math.sqrt(cur_pos_x**2 + cur_pos_y**2)
-        distance_car = math.sqrt(self.pos_x**2 + self.pos_y)
+        distance_car = math.sqrt(self.pos_x**2 + self.pos_y**2)
 
         if abs(distance_car - distance_wp) <= self.pos_radius:
             twist_msg.linear.x = 0.0
         else:
-            # this is the angle between the current cord and target cord
-            target_angle = round(math.atan2(self.pos_y - cur_pos_y, self.pos_x - cur_pos_x), 2)
-            # this is the angle of the car currently is facing
-            car_angle = round(self.quaternion_to_angle(odom_msg.pose.pose.orientation), 2)
             if (target_angle - car_angle) <= 0.1: 
                 print("runing...")
                 twist_msg.linear.x = 1.0
