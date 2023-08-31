@@ -5,83 +5,72 @@ from geometry_msgs.msg import Twist
 from custom_interfaces.msg import Waypoint
 from nav_msgs.msg import Odometry
 
-class MinimalPublisher(Node):
+class CommandVehicle(Node):
+    """
+    - cant differentiate back and front 
+    - doesnt work in some places ie far away and fourth quarter
+    """
 
     def __init__(self):
-        super().__init__('minimal_publisher')
+        super().__init__('command_vehicle')
         self.subscription = self.create_subscription(Waypoint, '/global_waypoint', self.waypoint_callback, 10)
-        self.subscription2 = self.create_subscription(Odometry, '/odom', self.lets_go, 10)
+        self.subscription2 = self.create_subscription(Odometry, '/odom', self.odom_callback, 10)
         self.publisher_ = self.create_publisher(Twist, '/cmd_vel', 10)
-        self.pos_x = 0.0 
-        self.pos_y = 0.0
-        self.pos_radius = 0.0
+        self.CAR_VELOCITY = 1.0
+        self.waypoint_msg = None
 
-    def lets_go(self, odom_msg):
-        # destination = x, y, z, radius
-        #Note that the destination is 2D, where z = 0
-        cur_pos_x = odom_msg.pose.pose.position.x
-        cur_pos_y = odom_msg.pose.pose.position.y
+    def odom_callback(self, odom_msg):
+        if self.waypoint_msg is None:
+            return
+
+        current_x = odom_msg.pose.pose.position.x
+        current_y = odom_msg.pose.pose.position.y
+
+        target_angle = math.atan2(self.waypoint_msg.y - current_y, self.waypoint_msg.x - current_x)
+        car_angle = self.quaternion_to_angle(odom_msg.pose.pose.orientation)
 
         twist_msg = Twist()
 
-        # this is the angle between the current cord and target cord
-        target_angle = round(math.atan2(self.pos_y - cur_pos_y, self.pos_x - cur_pos_x), 2)
-        # this is the angle of the car currently is facing
-        car_angle = round(self.quaternion_to_angle(odom_msg.pose.pose.orientation), 2)
+        distance_wp = math.sqrt((current_x - self.waypoint_msg.x) ** 2 + (current_y - self.waypoint_msg.y) ** 2)
 
-        # when we are at the target waypoint
-        distance_wp = math.sqrt(cur_pos_x**2 + cur_pos_y**2)
-        distance_car = math.sqrt(self.pos_x**2 + self.pos_y**2)
-
-        if abs(distance_car - distance_wp) <= self.pos_radius:
+        if distance_wp <= self.waypoint_msg.radius:
+            print("Arrived.")
             twist_msg.linear.x = 0.0
         else:
-            if (target_angle - car_angle) <= 0.1: 
-                print("runing...")
-                twist_msg.linear.x = 1.0
-            else: 
-                print("turning...")
-                twist_msg.angular.z = target_angle - car_angle
+            angle_difference = target_angle - car_angle
+            if angle_difference <= 0.1:
+                print("Running...")
+                twist_msg.angular.z = angle_difference
+                twist_msg.linear.x = self.CAR_VELOCITY
+            else:
+                print("Turning...")
+                twist_msg.angular.z = angle_difference
 
-        # print(odom_msg.pose.pose.position)
-        # print(odom_msg.pose.pose.orientation)
-        print(twist_msg.angular.z)
-        print(target_angle)
-        print(car_angle)
-        print(cur_pos_x, cur_pos_y)
-        # print(twist_msg)
+        print("Target angle: {}".format(target_angle))
+        print("Car angle: {}".format(car_angle))
+        print("Angle moved: {}".format(twist_msg.angular.z))
+        print("Current position: ({}, {})".format(current_x, current_y))
         self.publisher_.publish(twist_msg)
 
     def waypoint_callback(self, waypoint_msg): 
-        self.pos_x = waypoint_msg.x 
-        self.pos_y = waypoint_msg.y
-        self.pos_radius = waypoint_msg.radius
-
+        self.waypoint_msg = waypoint_msg
     
     def quaternion_to_angle(self, quat):
-        # Extract the z-axis rotation component from the quaternion
-        # z_rotation = 2 * math.atan2(quat.z, quat.w)
-        z_rotation = math.atan2(2*((quat.w*quat.z) + (quat.x*quat.y)), 1 - 2*(quat.y**2 + quat.x**2))
-        # Convert the rotation to the range [0, 2π)
-        # if z_rotation < 0:
-        #     z_rotation += 2 * math.pi
+        z_rotation = math.atan2(2 * ((quat.w * quat.z) + (quat.x * quat.y)), 1 - 2 * (quat.y**2 + quat.x**2))
         return abs(z_rotation)
-    
-
 
 def main(args=None):
     rclpy.init(args=args)
 
-    minimal_publisher = MinimalPublisher()
+    command_vehicle = CommandVehicle()
 
-    rclpy.spin(minimal_publisher)
+    try:
+        rclpy.spin(command_vehicle)
+    except KeyboardInterrupt:
+        pass
 
-    # Destroy the node explicitly
-    # (optional - otherwise it will be done automatically
-    # when the garbage collector destroys the node object)
-    minimal_publisher.destroy_node()
+    command_vehicle.destroy_node()
     rclpy.shutdown()
-
 
 if __name__ == '__main__':
     main()
