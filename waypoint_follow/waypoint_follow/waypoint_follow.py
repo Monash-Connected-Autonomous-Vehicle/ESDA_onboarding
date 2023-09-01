@@ -4,97 +4,140 @@ from rclpy.node import Node
 from geometry_msgs.msg import Twist
 from nav_msgs.msg import Odometry
 from custom_interfaces.msg import Waypoint
+from nav_msgs.msg import OccupancyGrid
 
 
 class WaypointFollow(Node):
+    """
+    Class for following a waypoint. Works for with basic worlds.
+    Uses a temporary waypoint if the robot is blocked infront.
+    """
+    DEFAULT_Z_ANGLE_VEL = 0.5
+    DEFAULT_X_LINEAR_VEL = 1.0
+    ZERO_VEL = 0.0
+    MANEUVER_ANGLE = math.pi/3
+
     def __init__(self):
         super().__init__('waypoint_follow')
-        # subscribe to odom topic
         self.odom_sub = self.create_subscription(Odometry, 'odom', self.follow_waypoint_callback, 1)
-        # subscribe to waypoint topic
         self.waypoint_sub = self.create_subscription(Waypoint, 'global_waypoint', self.set_waypoint_callback, 1)
-        self.waypoint = None
+        self.grid_sub = self.create_subscription(OccupancyGrid, 'grid', self.set_grid_callback, 1)
         self.cmd_vel_pub_ = self.create_publisher(Twist, 'cmd_vel', 1)
-        self.count = 0
-        self.drive = True
-        self.distance = None
-        self.theta = None
-        self.orientation_z = None
+
+        self.waypoint = None
+        self.grid = None
+        self.temp_waypoint = None
+        self.angle_z = None
+        self.pos = None
+        self.is_maneuvering = False
         
         
-    def follow_waypoint_callback(self, odom_msg=None):
-        if odom_msg is not None and self.waypoint is not None:
-            orientation = odom_msg.pose.pose.orientation
-            position = odom_msg.pose.pose.position
-            (x, y, z) = self.euler_from_quaternion(orientation.x, orientation.y, orientation.z, orientation.w)
-            self.orientation_z = z
-            # calculate z-angle between current position and waypoint position
-            self.theta = math.atan2(self.waypoint.y - position.y, self.waypoint.x - position.x)
-            self.distance = math.sqrt((self.waypoint.x - position.x)**2 + (self.waypoint.y - position.y)**2)
+    def follow_waypoint_callback(self, odom_msg):
+        """Follows the waypoint until it is reached."""
+        if self.waypoint is None:
+            return
+        
+        # Update current position and angle
+        self.pos = odom_msg.pose.pose.position
+        self.angle_z = self.euler_from_quaternion(odom_msg.pose.pose.orientation)
 
+        if self.is_blocked_infront():
+            new_temp_waypoint = self.calculate_temp_waypoint()
+            if new_temp_waypoint != self.temp_waypoint:
+                print("object in front, maneuvering")
+                self.temp_waypoint = new_temp_waypoint
+                print(f"New temp waypoint: {self.temp_waypoint}")
+                self.is_maneuvering = True
 
-        if self.distance is not None and self.theta is not None and self.orientation_z is not None:
-            msg = Twist()
+        current_wp = self.temp_waypoint if self.is_maneuvering else self.waypoint
 
-            if self.distance < self.waypoint.radius:
-                msg.angular.z = 0.0
-                msg.linear.x = 0.0
-                self.get_logger().info('Reached waypoint: "%s"' % self.waypoint)
-                self.destroy_subscription(self.odom_sub)
+        distance = self.calculate_distance(current_wp.x, current_wp.y, self.pos.x, self.pos.y)
+        theta = math.atan2(current_wp.y - self.pos.y, current_wp.x - self.pos.x)
 
-            elif abs(self.orientation_z - self.theta) > 0.1:
-                
-                msg.linear.x = 0.0
+        msg = Twist()
+        
+        if distance < current_wp.radius: # Waypoint reached
+            msg.angular.z = self.ZERO_VEL
+            msg.linear.x = self.ZERO_VEL
 
-                if self.orientation_z > self.theta:
-                    msg.angular.z = -0.5
-                else:
-                    msg.angular.z = 0.5
+            if self.is_maneuvering:
+                self.is_maneuvering = False
+                print(f"Reached temp waypoint: {current_wp}")
             else:
-                msg.angular.z = 0.0
-                msg.linear.x = 1.0
+                print(f"Reached waypoint: {current_wp}")
+                self.destroy_subscription(self.odom_sub)
+                self.destroy_subscription(self.grid_sub)
 
+        # Turning in place
+        elif abs(self.angle_z - theta) > 0.1:
+            msg.linear.x = self.ZERO_VEL
 
-            self.cmd_vel_pub_.publish(msg)
+            if self.angle_z > theta:
+                msg.angular.z = -1 * self.DEFAULT_Z_ANGLE_VEL
+            else:
+                msg.angular.z = self.DEFAULT_Z_ANGLE_VEL
+
+        # Moving forward
+        else:
+            msg.angular.z = self.ZERO_VEL
+            msg.linear.x = self.DEFAULT_X_LINEAR_VEL
+
+        self.cmd_vel_pub_.publish(msg)
 
 
     def set_waypoint_callback(self, msg):
+        """Sets the waypoint to follow."""
         if self.waypoint is None and msg is not None:
             self.waypoint = msg
-            self.get_logger().info('Received waypoint: "%s"' % self.waypoint)
-            # unsubscribe from waypoint topic since we only need to receive it once
+            print(f"Received waypoint: {self.waypoint}") 
             self.destroy_subscription(self.waypoint_sub)
 
 
+    def set_grid_callback(self, msg):
+        """Sets the occupancy grid."""
+        self.grid = msg.data
  
-    def euler_from_quaternion(self, x, y, z, w):
-            """
-            Source: https://automaticaddison.com/how-to-convert-a-quaternion-into-euler-angles-in-python/
-            Convert a quaternion into euler angles (roll, pitch, yaw)
-            roll is rotation around x in radians (counterclockwise)
-            pitch is rotation around y in radians (counterclockwise)
-            yaw is rotation around z in radians (counterclockwise)
-            """
-            t0 = +2.0 * (w * x + y * z)
-            t1 = +1.0 - 2.0 * (x * x + y * y)
-            roll_x = math.atan2(t0, t1)
-        
-            t2 = +2.0 * (w * y - z * x)
-            t2 = +1.0 if t2 > +1.0 else t2
-            t2 = -1.0 if t2 < -1.0 else t2
-            pitch_y = math.asin(t2)
-        
-            t3 = +2.0 * (w * z + x * y)
-            t4 = +1.0 - 2.0 * (y * y + z * z)
-            yaw_z = math.atan2(t3, t4)
-        
-            return roll_x, pitch_y, yaw_z # in radians
 
+    def euler_from_quaternion(self, orientation):
+        """Source: https://automaticaddison.com/how-to-convert-a-quaternion-into-euler-angles-in-python/"""
+        t3 = +2.0 * (orientation.w * orientation.z + orientation.x * orientation.y)
+        t4 = +1.0 - 2.0 * (orientation.y * orientation.y + orientation.z * orientation.z)
+        return  math.atan2(t3, t4) # in radians
+    
 
-
+    def is_blocked_infront(self):
+        """Check if the robot is blocked infront of it."""
+        # Check cells infront of robot
+        if self.grid is None:
+            return True
+        else:
+            # Hard coding for now :( Not entirely sure how to read occupancy grid data
+            return (100 in self.grid[4554:4558] or 
+                    100 in self.grid[4654:4658] or
+                    100 in self.grid[4754:4758] or
+                    100 in self.grid[4854:4858] or
+                    100 in self.grid[4954:4958] or
+                    100 in self.grid[5054:5058] or
+                    100 in self.grid[5154:5158])
         
-        # self.get_logger().info('Publishing: "%s"' % msg.linear.x)
-        # self.get_logger().info('Publishing: "%s"' % msg.angular.z)
+
+    def calculate_temp_waypoint(self):
+        """Computes a new temp way point approximately 2 blocks to the right of the current position.
+        New waypoint is 60 degrees from the current angle."""
+        temp_waypoint = Waypoint()
+        x_right = int(self.pos.x + 2 * math.cos(self.angle_z - self.MANEUVER_ANGLE))
+        y_right = int(self.pos.y + 2 * math.sin(self.angle_z - self.MANEUVER_ANGLE))
+
+        temp_waypoint.x = x_right
+        temp_waypoint.y = y_right
+        temp_waypoint.z = 0
+        temp_waypoint.radius = 1
+        return temp_waypoint
+    
+    
+    def calculate_distance(self, x1, y1, x2, y2):
+        """Calculates the distance between two points."""
+        return math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
 
 
 def main(args=None):
@@ -102,9 +145,6 @@ def main(args=None):
     node = WaypointFollow()
     rclpy.spin(node)
 
-    # Destroy the node explicitly
-    # (optional - otherwise it will be done automatically
-    # when the garbage collector destroys the node object)
     node.destroy_node()
     rclpy.shutdown()
 

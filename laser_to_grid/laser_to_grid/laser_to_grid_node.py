@@ -51,7 +51,8 @@ class LaserToGrid(Node):
             x = -p[1] + int(self.GRID_WIDTH/2)
             y = -p[0] + int(self.GRID_WIDTH/2)    
             idx = self.GRID_WIDTH*x + y
-            grid.data[idx] = 100 
+            if idx < len(grid.data):
+                grid.data[idx] = 100 
         
         self.grid_pub_.publish(grid)
 
