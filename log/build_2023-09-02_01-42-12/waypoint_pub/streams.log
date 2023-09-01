@@ -1,0 +1,39 @@
+[0.496s] Invoking command in '/home/klo40/ESDA_onboarding/waypoint_pub': AMENT_PREFIX_PATH=/home/klo40/ESDA_onboarding/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/klo40/ESDA_onboarding/install/custom_interfaces LD_LIBRARY_PATH=/home/klo40/ESDA_onboarding/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/klo40/ESDA_onboarding/build/waypoint_pub/prefix_override:/home/klo40/ESDA_onboarding/install/waypoint_pub/lib/python3.10/site-packages:/home/klo40/ESDA_onboarding/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/waypoint_pub build --build-base /home/klo40/ESDA_onboarding/build/waypoint_pub/build install --record /home/klo40/ESDA_onboarding/build/waypoint_pub/install.log --single-version-externally-managed
+[0.656s] running egg_info
+[0.665s] creating ../build/waypoint_pub/waypoint_pub.egg-info
+[0.665s] writing ../build/waypoint_pub/waypoint_pub.egg-info/PKG-INFO
+[0.665s] writing dependency_links to ../build/waypoint_pub/waypoint_pub.egg-info/dependency_links.txt
+[0.665s] writing entry points to ../build/waypoint_pub/waypoint_pub.egg-info/entry_points.txt
+[0.665s] writing requirements to ../build/waypoint_pub/waypoint_pub.egg-info/requires.txt
+[0.665s] writing top-level names to ../build/waypoint_pub/waypoint_pub.egg-info/top_level.txt
+[0.666s] writing manifest file '../build/waypoint_pub/waypoint_pub.egg-info/SOURCES.txt'
+[0.698s] reading manifest file '../build/waypoint_pub/waypoint_pub.egg-info/SOURCES.txt'
+[0.698s] writing manifest file '../build/waypoint_pub/waypoint_pub.egg-info/SOURCES.txt'
+[0.719s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.719s]   warnings.warn(
+[0.719s] running build
+[0.719s] running build_py
+[0.719s] creating /home/klo40/ESDA_onboarding/build/waypoint_pub/build
+[0.719s] creating /home/klo40/ESDA_onboarding/build/waypoint_pub/build/lib
+[0.719s] creating /home/klo40/ESDA_onboarding/build/waypoint_pub/build/lib/waypoint_pub
+[0.720s] copying waypoint_pub/waypoint_publisher.py -> /home/klo40/ESDA_onboarding/build/waypoint_pub/build/lib/waypoint_pub
+[0.720s] copying waypoint_pub/__init__.py -> /home/klo40/ESDA_onboarding/build/waypoint_pub/build/lib/waypoint_pub
+[0.720s] running install
+[0.720s] running install_lib
+[0.720s] creating /home/klo40/ESDA_onboarding/install/waypoint_pub/lib/python3.10/site-packages/waypoint_pub
+[0.720s] copying /home/klo40/ESDA_onboarding/build/waypoint_pub/build/lib/waypoint_pub/waypoint_publisher.py -> /home/klo40/ESDA_onboarding/install/waypoint_pub/lib/python3.10/site-packages/waypoint_pub
+[0.720s] copying /home/klo40/ESDA_onboarding/build/waypoint_pub/build/lib/waypoint_pub/__init__.py -> /home/klo40/ESDA_onboarding/install/waypoint_pub/lib/python3.10/site-packages/waypoint_pub
+[0.720s] byte-compiling /home/klo40/ESDA_onboarding/install/waypoint_pub/lib/python3.10/site-packages/waypoint_pub/waypoint_publisher.py to waypoint_publisher.cpython-310.pyc
+[0.720s] byte-compiling /home/klo40/ESDA_onboarding/install/waypoint_pub/lib/python3.10/site-packages/waypoint_pub/__init__.py to __init__.cpython-310.pyc
+[0.720s] running install_data
+[0.720s] creating /home/klo40/ESDA_onboarding/install/waypoint_pub/share/ament_index
+[0.722s] creating /home/klo40/ESDA_onboarding/install/waypoint_pub/share/ament_index/resource_index
+[0.722s] creating /home/klo40/ESDA_onboarding/install/waypoint_pub/share/ament_index/resource_index/packages
+[0.722s] copying resource/waypoint_pub -> /home/klo40/ESDA_onboarding/install/waypoint_pub/share/ament_index/resource_index/packages
+[0.722s] copying package.xml -> /home/klo40/ESDA_onboarding/install/waypoint_pub/share/waypoint_pub
+[0.722s] running install_egg_info
+[0.722s] Copying ../build/waypoint_pub/waypoint_pub.egg-info to /home/klo40/ESDA_onboarding/install/waypoint_pub/lib/python3.10/site-packages/waypoint_pub-0.0.0-py3.10.egg-info
+[0.722s] running install_scripts
+[0.746s] Installing waypoint_pub script to /home/klo40/ESDA_onboarding/install/waypoint_pub/lib/waypoint_pub
+[0.747s] writing list of installed files to '/home/klo40/ESDA_onboarding/build/waypoint_pub/install.log'
+[0.768s] Invoked command in '/home/klo40/ESDA_onboarding/waypoint_pub' returned '0': AMENT_PREFIX_PATH=/home/klo40/ESDA_onboarding/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/klo40/ESDA_onboarding/install/custom_interfaces LD_LIBRARY_PATH=/home/klo40/ESDA_onboarding/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/klo40/ESDA_onboarding/build/waypoint_pub/prefix_override:/home/klo40/ESDA_onboarding/install/waypoint_pub/lib/python3.10/site-packages:/home/klo40/ESDA_onboarding/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/waypoint_pub build --build-base /home/klo40/ESDA_onboarding/build/waypoint_pub/build install --record /home/klo40/ESDA_onboarding/build/waypoint_pub/install.log --single-version-externally-managed

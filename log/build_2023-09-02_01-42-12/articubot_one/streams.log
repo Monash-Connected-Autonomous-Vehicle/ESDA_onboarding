@@ -1,0 +1,63 @@
+[0.069s] Invoking command in '/home/klo40/ESDA_onboarding/build/articubot_one': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/klo40/ESDA_onboarding/articubot_one -DCMAKE_INSTALL_PREFIX=/home/klo40/ESDA_onboarding/install/articubot_one
+[0.445s] -- The C compiler identification is GNU 11.4.0
+[0.445s] -- The CXX compiler identification is GNU 11.4.0
+[0.445s] -- Detecting C compiler ABI info
+[0.445s] -- Detecting C compiler ABI info - done
+[0.445s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.445s] -- Detecting C compile features
+[0.445s] -- Detecting C compile features - done
+[0.445s] -- Detecting CXX compiler ABI info
+[0.534s] -- Detecting CXX compiler ABI info - done
+[0.540s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.540s] -- Detecting CXX compile features
+[0.541s] -- Detecting CXX compile features - done
+[0.543s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.760s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.867s] -- Found ament_lint_auto: 0.12.7 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.024s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.030s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.032s] -- Added test 'lint_cmake' to check CMake code style
+[1.033s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.036s] -- Added test 'xmllint' to check XML markup files
+[1.043s] -- Configuring done
+[1.050s] -- Generating done
+[1.051s] -- Build files have been written to: /home/klo40/ESDA_onboarding/build/articubot_one
+[1.063s] Invoked command in '/home/klo40/ESDA_onboarding/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/klo40/ESDA_onboarding/articubot_one -DCMAKE_INSTALL_PREFIX=/home/klo40/ESDA_onboarding/install/articubot_one
+[1.067s] Invoking command in '/home/klo40/ESDA_onboarding/build/articubot_one': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/klo40/ESDA_onboarding/build/articubot_one -- -j4 -l4
+[1.141s] Invoked command in '/home/klo40/ESDA_onboarding/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/klo40/ESDA_onboarding/build/articubot_one -- -j4 -l4
+[1.228s] Invoking command in '/home/klo40/ESDA_onboarding/build/articubot_one': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/klo40/ESDA_onboarding/build/articubot_one
+[1.240s] -- Install configuration: ""
+[1.241s] -- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/config
+[1.242s] -- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/config/view_bot.rviz
+[1.242s] -- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/config/empty.yaml
+[1.243s] -- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/config/drive_bot.rviz
+[1.244s] -- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/description
+[1.244s] -- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/description/lidar.xacro
+[1.244s] -- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/description/robot_core.xacro
+[1.245s] -- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/description/robot.urdf.xacro
+[1.245s] -- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/description/intertial_macros.xacro
+[1.246s] -- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/description/inertial_macros.xacro
+[1.246s] -- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/description/gazebo_control.xacro
+[1.247s] -- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/launch
+[1.248s] -- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/launch/rsp.launch.py
+[1.248s] -- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/launch/launch_sim.launch.py
+[1.248s] -- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/worlds
+[1.248s] -- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/worlds/obstacles.world
+[1.249s] -- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/worlds/obstacles2.world
+[1.250s] -- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/worlds/empty.world
+[1.251s] -- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/ament_index/resource_index/package_run_dependencies/articubot_one
+[1.252s] -- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/ament_index/resource_index/parent_prefix_path/articubot_one
+[1.252s] -- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/environment/ament_prefix_path.sh
+[1.252s] -- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/environment/ament_prefix_path.dsv
+[1.253s] -- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/environment/path.sh
+[1.253s] -- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/environment/path.dsv
+[1.254s] -- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/local_setup.bash
+[1.254s] -- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/local_setup.sh
+[1.254s] -- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/local_setup.zsh
+[1.255s] -- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/local_setup.dsv
+[1.255s] -- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/package.dsv
+[1.255s] -- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/ament_index/resource_index/packages/articubot_one
+[1.256s] -- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/cmake/articubot_oneConfig.cmake
+[1.256s] -- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/cmake/articubot_oneConfig-version.cmake
+[1.256s] -- Installing: /home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/package.xml
+[1.259s] Invoked command in '/home/klo40/ESDA_onboarding/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/klo40/ESDA_onboarding/build/articubot_one

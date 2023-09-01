@@ -1,0 +1,3 @@
+[console_scripts]
+waypoint_pub = waypoint_pub.waypoint_publisher:main
+

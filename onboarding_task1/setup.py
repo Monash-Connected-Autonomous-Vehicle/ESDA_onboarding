@@ -23,7 +23,8 @@ setup(
             'control_publisher = onboarding_task1.control:main',
             'laserscan = onboarding_task1.sense:main',
             'trial = onboarding_task1.trial:main',
-            'laser_to_grid = onboarding_task1.laser_to_grid_node:main'
+            'laser_to_grid = onboarding_task1.laser_to_grid_node:main',
+            'controlwaypoint = onboarding_task1.controlwaypoint:main'
         ],
     },
 )
