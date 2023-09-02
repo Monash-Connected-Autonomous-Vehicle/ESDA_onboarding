@@ -36,14 +36,14 @@ class waypoint_direction(Node):
         if self.car_pos_x <= self.final_pos_x+2.0 and self.car_pos_x >= self.final_pos_x-2.0 and self.car_pos_y <= self.final_pos_y+2.0 and self.car_pos_y >= self.final_pos_y-2.0:
             msg.linear.x = 0.0
             msg.angular.z = 0.0
-        elif self.moveangle < 1.0 or self.moveangle >-1.0:
+        elif self.moveangle < 0.1 and self.moveangle >-0.1:
             msg.linear.x = 1.0
             msg.angular.z = 0.0
         elif self.moveangle > 0.0:
-            msg.angular.z = 0.5
+            msg.angular.z = 0.1
             msg.linear.x = 0.0
         else:
-            msg.angular.z = -0.5
+            msg.angular.z = -0.1
             msg.linear.x = 0.0
 
         self.publisher_.publish(msg)
