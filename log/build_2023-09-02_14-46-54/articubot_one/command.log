@@ -1,0 +1,4 @@
+Invoking command in '/home/klo40/ESDA_onboarding/build/articubot_one': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/klo40/ESDA_onboarding/build/articubot_one -- -j4 -l4
+Invoked command in '/home/klo40/ESDA_onboarding/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/klo40/ESDA_onboarding/build/articubot_one -- -j4 -l4
+Invoking command in '/home/klo40/ESDA_onboarding/build/articubot_one': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/klo40/ESDA_onboarding/build/articubot_one
+Invoked command in '/home/klo40/ESDA_onboarding/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/klo40/ESDA_onboarding/build/articubot_one

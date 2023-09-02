@@ -1,5 +1,6 @@
 [console_scripts]
 control_publisher = onboarding_task1.control:main
+controlwaypoint = onboarding_task1.controlwaypoint:main
 laser_to_grid = onboarding_task1.laser_to_grid_node:main
 laserscan = onboarding_task1.sense:main
 trial = onboarding_task1.trial:main

@@ -1,0 +1,31 @@
+[0.727s] Invoking command in '/home/klo40/ESDA_onboarding/onboarding_task1': PYTHONPATH=/home/klo40/ESDA_onboarding/build/onboarding_task1/prefix_override:/home/klo40/ESDA_onboarding/install/onboarding_task1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/onboarding_task1 build --build-base /home/klo40/ESDA_onboarding/build/onboarding_task1/build install --record /home/klo40/ESDA_onboarding/build/onboarding_task1/install.log --single-version-externally-managed
+[0.885s] running egg_info
+[0.886s] writing ../build/onboarding_task1/onboarding_task1.egg-info/PKG-INFO
+[0.887s] writing dependency_links to ../build/onboarding_task1/onboarding_task1.egg-info/dependency_links.txt
+[0.888s] writing entry points to ../build/onboarding_task1/onboarding_task1.egg-info/entry_points.txt
+[0.888s] writing requirements to ../build/onboarding_task1/onboarding_task1.egg-info/requires.txt
+[0.888s] writing top-level names to ../build/onboarding_task1/onboarding_task1.egg-info/top_level.txt
+[0.890s] reading manifest file '../build/onboarding_task1/onboarding_task1.egg-info/SOURCES.txt'
+[0.899s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.899s]   warnings.warn(
+[0.899s] writing manifest file '../build/onboarding_task1/onboarding_task1.egg-info/SOURCES.txt'
+[0.900s] running build
+[0.900s] running build_py
+[0.900s] copying onboarding_task1/controlwaypoint.py -> /home/klo40/ESDA_onboarding/build/onboarding_task1/build/lib/onboarding_task1
+[0.901s] running install
+[0.901s] running install_lib
+[0.908s] Sorry: TabError: inconsistent use of tabs and spaces in indentation (controlwaypoint.py, line 48)
+[0.908s] copying /home/klo40/ESDA_onboarding/build/onboarding_task1/build/lib/onboarding_task1/controlwaypoint.py -> /home/klo40/ESDA_onboarding/install/onboarding_task1/lib/python3.10/site-packages/onboarding_task1
+[0.908s] byte-compiling /home/klo40/ESDA_onboarding/install/onboarding_task1/lib/python3.10/site-packages/onboarding_task1/controlwaypoint.py to controlwaypoint.cpython-310.pyc
+[0.908s] running install_data
+[0.908s] running install_egg_info
+[0.908s] removing '/home/klo40/ESDA_onboarding/install/onboarding_task1/lib/python3.10/site-packages/onboarding_task1-0.0.0-py3.10.egg-info' (and everything under it)
+[0.908s] Copying ../build/onboarding_task1/onboarding_task1.egg-info to /home/klo40/ESDA_onboarding/install/onboarding_task1/lib/python3.10/site-packages/onboarding_task1-0.0.0-py3.10.egg-info
+[0.908s] running install_scripts
+[0.923s] Installing control_publisher script to /home/klo40/ESDA_onboarding/install/onboarding_task1/lib/onboarding_task1
+[0.923s] Installing controlwaypoint script to /home/klo40/ESDA_onboarding/install/onboarding_task1/lib/onboarding_task1
+[0.923s] Installing laser_to_grid script to /home/klo40/ESDA_onboarding/install/onboarding_task1/lib/onboarding_task1
+[0.924s] Installing laserscan script to /home/klo40/ESDA_onboarding/install/onboarding_task1/lib/onboarding_task1
+[0.924s] Installing trial script to /home/klo40/ESDA_onboarding/install/onboarding_task1/lib/onboarding_task1
+[0.925s] writing list of installed files to '/home/klo40/ESDA_onboarding/build/onboarding_task1/install.log'
+[0.959s] Invoked command in '/home/klo40/ESDA_onboarding/onboarding_task1' returned '0': PYTHONPATH=/home/klo40/ESDA_onboarding/build/onboarding_task1/prefix_override:/home/klo40/ESDA_onboarding/install/onboarding_task1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/onboarding_task1 build --build-base /home/klo40/ESDA_onboarding/build/onboarding_task1/build install --record /home/klo40/ESDA_onboarding/build/onboarding_task1/install.log --single-version-externally-managed

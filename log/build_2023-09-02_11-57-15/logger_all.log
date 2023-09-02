@@ -1,0 +1,297 @@
+[0.222s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.222s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f1b5dfa3730>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f1b5e0f6080>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f1b5e0f6080>>)
+[0.245s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.245s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.245s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.245s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.245s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.245s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.245s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/klo40/ESDA_onboarding'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(articubot_one) by extensions ['ignore', 'ignore_ament_install']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(articubot_one) by extension 'ignore'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(articubot_one) by extension 'ignore_ament_install'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(articubot_one) by extensions ['colcon_pkg']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(articubot_one) by extension 'colcon_pkg'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(articubot_one) by extensions ['colcon_meta']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(articubot_one) by extension 'colcon_meta'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(articubot_one) by extensions ['ros']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(articubot_one) by extension 'ros'
+[0.256s] DEBUG:colcon.colcon_core.package_identification:Package 'articubot_one' with type 'ros.ament_cmake' and name 'articubot_one'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(custom_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(custom_interfaces) by extension 'ignore'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(custom_interfaces) by extension 'ignore_ament_install'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(custom_interfaces) by extensions ['colcon_pkg']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(custom_interfaces) by extension 'colcon_pkg'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(custom_interfaces) by extensions ['colcon_meta']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(custom_interfaces) by extension 'colcon_meta'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(custom_interfaces) by extensions ['ros']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(custom_interfaces) by extension 'ros'
+[0.257s] DEBUG:colcon.colcon_core.package_identification:Package 'custom_interfaces' with type 'ros.ament_cmake' and name 'custom_interfaces'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(onboarding_task1) by extensions ['ignore', 'ignore_ament_install']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(onboarding_task1) by extension 'ignore'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(onboarding_task1) by extension 'ignore_ament_install'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(onboarding_task1) by extensions ['colcon_pkg']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(onboarding_task1) by extension 'colcon_pkg'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(onboarding_task1) by extensions ['colcon_meta']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(onboarding_task1) by extension 'colcon_meta'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(onboarding_task1) by extensions ['ros']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(onboarding_task1) by extension 'ros'
+[0.258s] DEBUG:colcon.colcon_core.package_identification:Package 'onboarding_task1' with type 'ros.ament_python' and name 'onboarding_task1'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(waypoint_pub) by extensions ['ignore', 'ignore_ament_install']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(waypoint_pub) by extension 'ignore'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(waypoint_pub) by extension 'ignore_ament_install'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(waypoint_pub) by extensions ['colcon_pkg']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(waypoint_pub) by extension 'colcon_pkg'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(waypoint_pub) by extensions ['colcon_meta']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(waypoint_pub) by extension 'colcon_meta'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(waypoint_pub) by extensions ['ros']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(waypoint_pub) by extension 'ros'
+[0.259s] DEBUG:colcon.colcon_core.package_identification:Package 'waypoint_pub' with type 'ros.ament_python' and name 'waypoint_pub'
+[0.259s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.259s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.259s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.259s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.259s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.276s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.276s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.278s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/klo40/ESDA_onboarding/install
+[0.279s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 280 installed packages in /opt/ros/humble
+[0.280s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.321s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'cmake_args' from command line to 'None'
+[0.321s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'cmake_target' from command line to 'None'
+[0.321s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.321s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'cmake_clean_cache' from command line to 'False'
+[0.321s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'cmake_clean_first' from command line to 'False'
+[0.321s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'cmake_force_configure' from command line to 'False'
+[0.321s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'ament_cmake_args' from command line to 'None'
+[0.321s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'catkin_cmake_args' from command line to 'None'
+[0.321s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.321s] DEBUG:colcon.colcon_core.verb:Building package 'articubot_one' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/klo40/ESDA_onboarding/build/articubot_one', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/klo40/ESDA_onboarding/install/articubot_one', 'merge_install': False, 'path': '/home/klo40/ESDA_onboarding/articubot_one', 'symlink_install': False, 'test_result_base': None}
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.323s] DEBUG:colcon.colcon_core.verb:Building package 'custom_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/klo40/ESDA_onboarding/build/custom_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/klo40/ESDA_onboarding/install/custom_interfaces', 'merge_install': False, 'path': '/home/klo40/ESDA_onboarding/custom_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'onboarding_task1' build argument 'cmake_args' from command line to 'None'
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'onboarding_task1' build argument 'cmake_target' from command line to 'None'
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'onboarding_task1' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'onboarding_task1' build argument 'cmake_clean_cache' from command line to 'False'
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'onboarding_task1' build argument 'cmake_clean_first' from command line to 'False'
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'onboarding_task1' build argument 'cmake_force_configure' from command line to 'False'
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'onboarding_task1' build argument 'ament_cmake_args' from command line to 'None'
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'onboarding_task1' build argument 'catkin_cmake_args' from command line to 'None'
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'onboarding_task1' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.324s] DEBUG:colcon.colcon_core.verb:Building package 'onboarding_task1' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/klo40/ESDA_onboarding/build/onboarding_task1', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/klo40/ESDA_onboarding/install/onboarding_task1', 'merge_install': False, 'path': '/home/klo40/ESDA_onboarding/onboarding_task1', 'symlink_install': False, 'test_result_base': None}
+[0.324s] Level 5:colcon.colcon_core.verb:set package 'waypoint_pub' build argument 'cmake_args' from command line to 'None'
+[0.324s] Level 5:colcon.colcon_core.verb:set package 'waypoint_pub' build argument 'cmake_target' from command line to 'None'
+[0.324s] Level 5:colcon.colcon_core.verb:set package 'waypoint_pub' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.324s] Level 5:colcon.colcon_core.verb:set package 'waypoint_pub' build argument 'cmake_clean_cache' from command line to 'False'
+[0.324s] Level 5:colcon.colcon_core.verb:set package 'waypoint_pub' build argument 'cmake_clean_first' from command line to 'False'
+[0.324s] Level 5:colcon.colcon_core.verb:set package 'waypoint_pub' build argument 'cmake_force_configure' from command line to 'False'
+[0.324s] Level 5:colcon.colcon_core.verb:set package 'waypoint_pub' build argument 'ament_cmake_args' from command line to 'None'
+[0.324s] Level 5:colcon.colcon_core.verb:set package 'waypoint_pub' build argument 'catkin_cmake_args' from command line to 'None'
+[0.324s] Level 5:colcon.colcon_core.verb:set package 'waypoint_pub' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.324s] DEBUG:colcon.colcon_core.verb:Building package 'waypoint_pub' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/klo40/ESDA_onboarding/build/waypoint_pub', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/klo40/ESDA_onboarding/install/waypoint_pub', 'merge_install': False, 'path': '/home/klo40/ESDA_onboarding/waypoint_pub', 'symlink_install': False, 'test_result_base': None}
+[0.325s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.328s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.328s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/klo40/ESDA_onboarding/custom_interfaces' with build type 'ament_cmake'
+[0.328s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/klo40/ESDA_onboarding/custom_interfaces'
+[0.333s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.333s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.333s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.346s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/klo40/ESDA_onboarding/articubot_one' with build type 'ament_cmake'
+[0.347s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/klo40/ESDA_onboarding/articubot_one'
+[0.348s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.348s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.457s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/klo40/ESDA_onboarding/build/custom_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/klo40/ESDA_onboarding/install/waypoint_pub:/home/klo40/ESDA_onboarding/install/onboarding_task1:/opt/ros/humble /usr/bin/cmake --build /home/klo40/ESDA_onboarding/build/custom_interfaces -- -j4 -l4
+[0.475s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/klo40/ESDA_onboarding/build/articubot_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/klo40/ESDA_onboarding/install/waypoint_pub:/home/klo40/ESDA_onboarding/install/onboarding_task1:/opt/ros/humble /usr/bin/cmake --build /home/klo40/ESDA_onboarding/build/articubot_one -- -j4 -l4
+[0.642s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/klo40/ESDA_onboarding/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/klo40/ESDA_onboarding/install/waypoint_pub:/home/klo40/ESDA_onboarding/install/onboarding_task1:/opt/ros/humble /usr/bin/cmake --build /home/klo40/ESDA_onboarding/build/articubot_one -- -j4 -l4
+[0.724s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/klo40/ESDA_onboarding/build/articubot_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/klo40/ESDA_onboarding/install/waypoint_pub:/home/klo40/ESDA_onboarding/install/onboarding_task1:/opt/ros/humble /usr/bin/cmake --install /home/klo40/ESDA_onboarding/build/articubot_one
+[0.764s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(articubot_one)
+[0.766s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/klo40/ESDA_onboarding/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/klo40/ESDA_onboarding/install/waypoint_pub:/home/klo40/ESDA_onboarding/install/onboarding_task1:/opt/ros/humble /usr/bin/cmake --install /home/klo40/ESDA_onboarding/build/articubot_one
+[0.769s] Level 1:colcon.colcon_core.environment:checking '/home/klo40/ESDA_onboarding/install/articubot_one' for CMake module files
+[0.770s] Level 1:colcon.colcon_core.environment:checking '/home/klo40/ESDA_onboarding/install/articubot_one' for CMake config files
+[0.770s] Level 1:colcon.colcon_core.shell:create_environment_hook('articubot_one', 'cmake_prefix_path')
+[0.771s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/hook/cmake_prefix_path.ps1'
+[0.772s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/hook/cmake_prefix_path.dsv'
+[0.772s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/hook/cmake_prefix_path.sh'
+[0.773s] Level 1:colcon.colcon_core.environment:checking '/home/klo40/ESDA_onboarding/install/articubot_one/bin'
+[0.773s] Level 1:colcon.colcon_core.environment:checking '/home/klo40/ESDA_onboarding/install/articubot_one/lib/pkgconfig/articubot_one.pc'
+[0.774s] Level 1:colcon.colcon_core.environment:checking '/home/klo40/ESDA_onboarding/install/articubot_one/lib/python3.10/site-packages'
+[0.774s] Level 1:colcon.colcon_core.environment:checking '/home/klo40/ESDA_onboarding/install/articubot_one/bin'
+[0.775s] INFO:colcon.colcon_core.shell:Creating package script '/home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/package.ps1'
+[0.776s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/package.dsv'
+[0.777s] INFO:colcon.colcon_core.shell:Creating package script '/home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/package.sh'
+[0.777s] INFO:colcon.colcon_core.shell:Creating package script '/home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/package.bash'
+[0.778s] INFO:colcon.colcon_core.shell:Creating package script '/home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/package.zsh'
+[0.779s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/klo40/ESDA_onboarding/install/articubot_one/share/colcon-core/packages/articubot_one)
+[0.882s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(articubot_one)
+[0.883s] Level 1:colcon.colcon_core.environment:checking '/home/klo40/ESDA_onboarding/install/articubot_one' for CMake module files
+[0.883s] Level 1:colcon.colcon_core.environment:checking '/home/klo40/ESDA_onboarding/install/articubot_one' for CMake config files
+[0.883s] Level 1:colcon.colcon_core.shell:create_environment_hook('articubot_one', 'cmake_prefix_path')
+[0.884s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/hook/cmake_prefix_path.ps1'
+[0.885s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/hook/cmake_prefix_path.dsv'
+[0.885s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/hook/cmake_prefix_path.sh'
+[0.886s] Level 1:colcon.colcon_core.environment:checking '/home/klo40/ESDA_onboarding/install/articubot_one/bin'
+[0.886s] Level 1:colcon.colcon_core.environment:checking '/home/klo40/ESDA_onboarding/install/articubot_one/lib/pkgconfig/articubot_one.pc'
+[0.887s] Level 1:colcon.colcon_core.environment:checking '/home/klo40/ESDA_onboarding/install/articubot_one/lib/python3.10/site-packages'
+[0.887s] Level 1:colcon.colcon_core.environment:checking '/home/klo40/ESDA_onboarding/install/articubot_one/bin'
+[0.887s] INFO:colcon.colcon_core.shell:Creating package script '/home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/package.ps1'
+[0.888s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/package.dsv'
+[0.889s] INFO:colcon.colcon_core.shell:Creating package script '/home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/package.sh'
+[0.889s] INFO:colcon.colcon_core.shell:Creating package script '/home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/package.bash'
+[0.889s] INFO:colcon.colcon_core.shell:Creating package script '/home/klo40/ESDA_onboarding/install/articubot_one/share/articubot_one/package.zsh'
+[0.891s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/klo40/ESDA_onboarding/install/articubot_one/share/colcon-core/packages/articubot_one)
+[1.862s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/klo40/ESDA_onboarding/build/custom_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/klo40/ESDA_onboarding/install/waypoint_pub:/home/klo40/ESDA_onboarding/install/onboarding_task1:/opt/ros/humble /usr/bin/cmake --build /home/klo40/ESDA_onboarding/build/custom_interfaces -- -j4 -l4
+[2.155s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/klo40/ESDA_onboarding/build/custom_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/klo40/ESDA_onboarding/install/waypoint_pub:/home/klo40/ESDA_onboarding/install/onboarding_task1:/opt/ros/humble /usr/bin/cmake --install /home/klo40/ESDA_onboarding/build/custom_interfaces
+[2.235s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_interfaces)
+[2.236s] Level 1:colcon.colcon_core.environment:checking '/home/klo40/ESDA_onboarding/install/custom_interfaces' for CMake module files
+[2.237s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/klo40/ESDA_onboarding/build/custom_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/klo40/ESDA_onboarding/install/waypoint_pub:/home/klo40/ESDA_onboarding/install/onboarding_task1:/opt/ros/humble /usr/bin/cmake --install /home/klo40/ESDA_onboarding/build/custom_interfaces
+[2.238s] Level 1:colcon.colcon_core.environment:checking '/home/klo40/ESDA_onboarding/install/custom_interfaces' for CMake config files
+[2.238s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interfaces', 'cmake_prefix_path')
+[2.239s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.ps1'
+[2.240s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.dsv'
+[2.240s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.sh'
+[2.241s] Level 1:colcon.colcon_core.environment:checking '/home/klo40/ESDA_onboarding/install/custom_interfaces/lib'
+[2.241s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interfaces', 'ld_library_path_lib')
+[2.242s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.ps1'
+[2.242s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.dsv'
+[2.243s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.sh'
+[2.243s] Level 1:colcon.colcon_core.environment:checking '/home/klo40/ESDA_onboarding/install/custom_interfaces/bin'
+[2.244s] Level 1:colcon.colcon_core.environment:checking '/home/klo40/ESDA_onboarding/install/custom_interfaces/lib/pkgconfig/custom_interfaces.pc'
+[2.244s] Level 1:colcon.colcon_core.environment:checking '/home/klo40/ESDA_onboarding/install/custom_interfaces/lib/python3.10/site-packages'
+[2.244s] Level 1:colcon.colcon_core.environment:checking '/home/klo40/ESDA_onboarding/install/custom_interfaces/bin'
+[2.245s] INFO:colcon.colcon_core.shell:Creating package script '/home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/package.ps1'
+[2.245s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/package.dsv'
+[2.246s] INFO:colcon.colcon_core.shell:Creating package script '/home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/package.sh'
+[2.247s] INFO:colcon.colcon_core.shell:Creating package script '/home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/package.bash'
+[2.247s] INFO:colcon.colcon_core.shell:Creating package script '/home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/package.zsh'
+[2.248s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/klo40/ESDA_onboarding/install/custom_interfaces/share/colcon-core/packages/custom_interfaces)
+[2.559s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_interfaces)
+[2.560s] Level 1:colcon.colcon_core.environment:checking '/home/klo40/ESDA_onboarding/install/custom_interfaces' for CMake module files
+[2.560s] Level 1:colcon.colcon_core.environment:checking '/home/klo40/ESDA_onboarding/install/custom_interfaces' for CMake config files
+[2.560s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interfaces', 'cmake_prefix_path')
+[2.561s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.ps1'
+[2.562s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.dsv'
+[2.562s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.sh'
+[2.562s] Level 1:colcon.colcon_core.environment:checking '/home/klo40/ESDA_onboarding/install/custom_interfaces/lib'
+[2.563s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interfaces', 'ld_library_path_lib')
+[2.563s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.ps1'
+[2.564s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.dsv'
+[2.564s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.sh'
+[2.564s] Level 1:colcon.colcon_core.environment:checking '/home/klo40/ESDA_onboarding/install/custom_interfaces/bin'
+[2.564s] Level 1:colcon.colcon_core.environment:checking '/home/klo40/ESDA_onboarding/install/custom_interfaces/lib/pkgconfig/custom_interfaces.pc'
+[2.565s] Level 1:colcon.colcon_core.environment:checking '/home/klo40/ESDA_onboarding/install/custom_interfaces/lib/python3.10/site-packages'
+[2.565s] Level 1:colcon.colcon_core.environment:checking '/home/klo40/ESDA_onboarding/install/custom_interfaces/bin'
+[2.566s] INFO:colcon.colcon_core.shell:Creating package script '/home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/package.ps1'
+[2.566s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/package.dsv'
+[2.567s] INFO:colcon.colcon_core.shell:Creating package script '/home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/package.sh'
+[2.567s] INFO:colcon.colcon_core.shell:Creating package script '/home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/package.bash'
+[2.568s] INFO:colcon.colcon_core.shell:Creating package script '/home/klo40/ESDA_onboarding/install/custom_interfaces/share/custom_interfaces/package.zsh'
+[2.568s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/klo40/ESDA_onboarding/install/custom_interfaces/share/colcon-core/packages/custom_interfaces)
+[2.570s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/klo40/ESDA_onboarding/onboarding_task1' with build type 'ament_python'
+[2.570s] Level 1:colcon.colcon_core.shell:create_environment_hook('onboarding_task1', 'ament_prefix_path')
+[2.571s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/klo40/ESDA_onboarding/install/onboarding_task1/share/onboarding_task1/hook/ament_prefix_path.ps1'
+[2.571s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/klo40/ESDA_onboarding/install/onboarding_task1/share/onboarding_task1/hook/ament_prefix_path.dsv'
+[2.575s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/klo40/ESDA_onboarding/install/onboarding_task1/share/onboarding_task1/hook/ament_prefix_path.sh'
+[2.576s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.576s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.581s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/klo40/ESDA_onboarding/waypoint_pub' with build type 'ament_python'
+[2.581s] Level 1:colcon.colcon_core.shell:create_environment_hook('waypoint_pub', 'ament_prefix_path')
+[2.582s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/klo40/ESDA_onboarding/install/waypoint_pub/share/waypoint_pub/hook/ament_prefix_path.ps1'
+[2.582s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/klo40/ESDA_onboarding/install/waypoint_pub/share/waypoint_pub/hook/ament_prefix_path.dsv'
+[2.583s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/klo40/ESDA_onboarding/install/waypoint_pub/share/waypoint_pub/hook/ament_prefix_path.sh'
+[2.585s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.585s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.816s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/klo40/ESDA_onboarding/onboarding_task1'
+[2.817s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.817s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.101s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/klo40/ESDA_onboarding/waypoint_pub'
+[3.102s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.102s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.369s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/klo40/ESDA_onboarding/onboarding_task1': PYTHONPATH=/home/klo40/ESDA_onboarding/build/onboarding_task1/prefix_override:/home/klo40/ESDA_onboarding/install/onboarding_task1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/onboarding_task1 build --build-base /home/klo40/ESDA_onboarding/build/onboarding_task1/build install --record /home/klo40/ESDA_onboarding/build/onboarding_task1/install.log --single-version-externally-managed
+[3.379s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/klo40/ESDA_onboarding/waypoint_pub': PYTHONPATH=/home/klo40/ESDA_onboarding/build/waypoint_pub/prefix_override:/home/klo40/ESDA_onboarding/install/waypoint_pub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/waypoint_pub build --build-base /home/klo40/ESDA_onboarding/build/waypoint_pub/build install --record /home/klo40/ESDA_onboarding/build/waypoint_pub/install.log --single-version-externally-managed
+[3.724s] Level 1:colcon.colcon_core.environment:checking '/home/klo40/ESDA_onboarding/install/onboarding_task1' for CMake module files
+[3.724s] Level 1:colcon.colcon_core.environment:checking '/home/klo40/ESDA_onboarding/install/onboarding_task1' for CMake config files
+[3.725s] Level 1:colcon.colcon_core.environment:checking '/home/klo40/ESDA_onboarding/install/onboarding_task1/lib'
+[3.725s] Level 1:colcon.colcon_core.environment:checking '/home/klo40/ESDA_onboarding/install/onboarding_task1/bin'
+[3.725s] Level 1:colcon.colcon_core.environment:checking '/home/klo40/ESDA_onboarding/install/onboarding_task1/lib/pkgconfig/onboarding_task1.pc'
+[3.725s] Level 1:colcon.colcon_core.environment:checking '/home/klo40/ESDA_onboarding/install/onboarding_task1/lib/python3.10/site-packages'
+[3.725s] Level 1:colcon.colcon_core.shell:create_environment_hook('onboarding_task1', 'pythonpath')
+[3.727s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/klo40/ESDA_onboarding/install/onboarding_task1/share/onboarding_task1/hook/pythonpath.ps1'
+[3.728s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/klo40/ESDA_onboarding/install/onboarding_task1/share/onboarding_task1/hook/pythonpath.dsv'
+[3.728s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/klo40/ESDA_onboarding/install/onboarding_task1/share/onboarding_task1/hook/pythonpath.sh'
+[3.730s] Level 1:colcon.colcon_core.environment:checking '/home/klo40/ESDA_onboarding/install/onboarding_task1/bin'
+[3.730s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(onboarding_task1)
+[3.731s] INFO:colcon.colcon_core.shell:Creating package script '/home/klo40/ESDA_onboarding/install/onboarding_task1/share/onboarding_task1/package.ps1'
+[3.732s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/klo40/ESDA_onboarding/install/onboarding_task1/share/onboarding_task1/package.dsv'
+[3.733s] INFO:colcon.colcon_core.shell:Creating package script '/home/klo40/ESDA_onboarding/install/onboarding_task1/share/onboarding_task1/package.sh'
+[3.733s] INFO:colcon.colcon_core.shell:Creating package script '/home/klo40/ESDA_onboarding/install/onboarding_task1/share/onboarding_task1/package.bash'
+[3.734s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/klo40/ESDA_onboarding/onboarding_task1' returned '0': PYTHONPATH=/home/klo40/ESDA_onboarding/build/onboarding_task1/prefix_override:/home/klo40/ESDA_onboarding/install/onboarding_task1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/onboarding_task1 build --build-base /home/klo40/ESDA_onboarding/build/onboarding_task1/build install --record /home/klo40/ESDA_onboarding/build/onboarding_task1/install.log --single-version-externally-managed
+[3.734s] INFO:colcon.colcon_core.shell:Creating package script '/home/klo40/ESDA_onboarding/install/onboarding_task1/share/onboarding_task1/package.zsh'
+[3.735s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/klo40/ESDA_onboarding/install/onboarding_task1/share/colcon-core/packages/onboarding_task1)
+[3.779s] Level 1:colcon.colcon_core.environment:checking '/home/klo40/ESDA_onboarding/install/waypoint_pub' for CMake module files
+[3.779s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/klo40/ESDA_onboarding/waypoint_pub' returned '0': PYTHONPATH=/home/klo40/ESDA_onboarding/build/waypoint_pub/prefix_override:/home/klo40/ESDA_onboarding/install/waypoint_pub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/waypoint_pub build --build-base /home/klo40/ESDA_onboarding/build/waypoint_pub/build install --record /home/klo40/ESDA_onboarding/build/waypoint_pub/install.log --single-version-externally-managed
+[3.789s] Level 1:colcon.colcon_core.environment:checking '/home/klo40/ESDA_onboarding/install/waypoint_pub' for CMake config files
+[3.789s] Level 1:colcon.colcon_core.environment:checking '/home/klo40/ESDA_onboarding/install/waypoint_pub/lib'
+[3.789s] Level 1:colcon.colcon_core.environment:checking '/home/klo40/ESDA_onboarding/install/waypoint_pub/bin'
+[3.789s] Level 1:colcon.colcon_core.environment:checking '/home/klo40/ESDA_onboarding/install/waypoint_pub/lib/pkgconfig/waypoint_pub.pc'
+[3.789s] Level 1:colcon.colcon_core.environment:checking '/home/klo40/ESDA_onboarding/install/waypoint_pub/lib/python3.10/site-packages'
+[3.790s] Level 1:colcon.colcon_core.shell:create_environment_hook('waypoint_pub', 'pythonpath')
+[3.791s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/klo40/ESDA_onboarding/install/waypoint_pub/share/waypoint_pub/hook/pythonpath.ps1'
+[3.791s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/klo40/ESDA_onboarding/install/waypoint_pub/share/waypoint_pub/hook/pythonpath.dsv'
+[3.792s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/klo40/ESDA_onboarding/install/waypoint_pub/share/waypoint_pub/hook/pythonpath.sh'
+[3.793s] Level 1:colcon.colcon_core.environment:checking '/home/klo40/ESDA_onboarding/install/waypoint_pub/bin'
+[3.793s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(waypoint_pub)
+[3.794s] INFO:colcon.colcon_core.shell:Creating package script '/home/klo40/ESDA_onboarding/install/waypoint_pub/share/waypoint_pub/package.ps1'
+[3.794s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/klo40/ESDA_onboarding/install/waypoint_pub/share/waypoint_pub/package.dsv'
+[3.795s] INFO:colcon.colcon_core.shell:Creating package script '/home/klo40/ESDA_onboarding/install/waypoint_pub/share/waypoint_pub/package.sh'
+[3.795s] INFO:colcon.colcon_core.shell:Creating package script '/home/klo40/ESDA_onboarding/install/waypoint_pub/share/waypoint_pub/package.bash'
+[3.796s] INFO:colcon.colcon_core.shell:Creating package script '/home/klo40/ESDA_onboarding/install/waypoint_pub/share/waypoint_pub/package.zsh'
+[3.796s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/klo40/ESDA_onboarding/install/waypoint_pub/share/colcon-core/packages/waypoint_pub)
+[3.797s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.797s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.797s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.797s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.803s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.803s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.804s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.819s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.820s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/klo40/ESDA_onboarding/install/local_setup.ps1'
+[3.821s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/klo40/ESDA_onboarding/install/_local_setup_util_ps1.py'
+[3.823s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/klo40/ESDA_onboarding/install/setup.ps1'
+[3.824s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/klo40/ESDA_onboarding/install/local_setup.sh'
+[3.825s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/klo40/ESDA_onboarding/install/_local_setup_util_sh.py'
+[3.825s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/klo40/ESDA_onboarding/install/setup.sh'
+[3.827s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/klo40/ESDA_onboarding/install/local_setup.bash'
+[3.827s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/klo40/ESDA_onboarding/install/setup.bash'
+[3.829s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/klo40/ESDA_onboarding/install/local_setup.zsh'
+[3.830s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/klo40/ESDA_onboarding/install/setup.zsh'

@@ -1,10 +1,12 @@
 /home/klo40/ESDA_onboarding/install/onboarding_task1/lib/python3.10/site-packages/onboarding_task1/trial.py
 /home/klo40/ESDA_onboarding/install/onboarding_task1/lib/python3.10/site-packages/onboarding_task1/control.py
+/home/klo40/ESDA_onboarding/install/onboarding_task1/lib/python3.10/site-packages/onboarding_task1/controlwaypoint.py
 /home/klo40/ESDA_onboarding/install/onboarding_task1/lib/python3.10/site-packages/onboarding_task1/__init__.py
 /home/klo40/ESDA_onboarding/install/onboarding_task1/lib/python3.10/site-packages/onboarding_task1/sense.py
 /home/klo40/ESDA_onboarding/install/onboarding_task1/lib/python3.10/site-packages/onboarding_task1/laser_to_grid_node.py
 /home/klo40/ESDA_onboarding/install/onboarding_task1/lib/python3.10/site-packages/onboarding_task1/__pycache__/trial.cpython-310.pyc
 /home/klo40/ESDA_onboarding/install/onboarding_task1/lib/python3.10/site-packages/onboarding_task1/__pycache__/control.cpython-310.pyc
+/home/klo40/ESDA_onboarding/install/onboarding_task1/lib/python3.10/site-packages/onboarding_task1/__pycache__/controlwaypoint.cpython-310.pyc
 /home/klo40/ESDA_onboarding/install/onboarding_task1/lib/python3.10/site-packages/onboarding_task1/__pycache__/__init__.cpython-310.pyc
 /home/klo40/ESDA_onboarding/install/onboarding_task1/lib/python3.10/site-packages/onboarding_task1/__pycache__/sense.cpython-310.pyc
 /home/klo40/ESDA_onboarding/install/onboarding_task1/lib/python3.10/site-packages/onboarding_task1/__pycache__/laser_to_grid_node.cpython-310.pyc
@@ -18,6 +20,7 @@
 /home/klo40/ESDA_onboarding/install/onboarding_task1/lib/python3.10/site-packages/onboarding_task1-0.0.0-py3.10.egg-info/requires.txt
 /home/klo40/ESDA_onboarding/install/onboarding_task1/lib/python3.10/site-packages/onboarding_task1-0.0.0-py3.10.egg-info/zip-safe
 /home/klo40/ESDA_onboarding/install/onboarding_task1/lib/onboarding_task1/control_publisher
+/home/klo40/ESDA_onboarding/install/onboarding_task1/lib/onboarding_task1/controlwaypoint
 /home/klo40/ESDA_onboarding/install/onboarding_task1/lib/onboarding_task1/laser_to_grid
 /home/klo40/ESDA_onboarding/install/onboarding_task1/lib/onboarding_task1/laserscan
 /home/klo40/ESDA_onboarding/install/onboarding_task1/lib/onboarding_task1/trial
