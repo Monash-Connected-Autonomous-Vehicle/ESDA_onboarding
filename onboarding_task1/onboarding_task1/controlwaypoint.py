@@ -14,6 +14,7 @@ class waypoint_direction(Node):
         self.publisher_ = self.create_publisher(Twist, '/cmd_vel', 10)
         self.subscription2 = self.create_subscription(Waypoint, '/global_waypoint', self.waypoint_callback, 10)
         self.subscription1 = self.create_subscription(Odometry, '/odom', self.position_callback, 10)
+        # initialise vars
         self.final_pos_x = 0.0
         self.final_pos_y = 0.0
 
@@ -23,25 +24,36 @@ class waypoint_direction(Node):
         self.get_logger().info('yeet')
 
     def position_callback(self, pos):
+        # get current position of car
         self.car_pos_x = pos.pose.pose.position.x
         self.car_pos_y = pos.pose.pose.position.y
-        # since rotation is just in the z-axis, then qy = sin(alpha/2)
+        # get current orientation of car in the z axis
+        # convert quartonian to radians -> since rotation is just in the z-axis, then qy = sin(alpha/2)
         self.ori = math.asin(pos.pose.pose.orientation.z) * 2
-
-        # steps: find the angle between current pos and waypoint pos
+        
+        # step 1: find the angle between current pos and waypoint pos
         self.final_direction = math.atan((self.car_pos_y - self.final_pos_y) / (self.car_pos_x - self.final_pos_x))
         self.moveangle = self.final_direction - self.ori
 
         msg = Twist()
+
+        # step 2: align the car to the correct direction & move forward
+        # if car arrived at waypoint, stop moving
         if self.car_pos_x <= self.final_pos_x+2.0 and self.car_pos_x >= self.final_pos_x-2.0 and self.car_pos_y <= self.final_pos_y+2.0 and self.car_pos_y >= self.final_pos_y-2.0:
             msg.linear.x = 0.0
             msg.angular.z = 0.0
+        
+        # if car is in correct direction, move forward
         elif self.moveangle < 0.1 and self.moveangle >-0.1:
             msg.linear.x = 1.0
             msg.angular.z = 0.0
+        
+        # if positive angle, rotate car in positive direction 
         elif self.moveangle > 0.0:
             msg.angular.z = 0.1
             msg.linear.x = 0.0
+        
+        # if negative angle, rotate car in negative direction
         else:
             msg.angular.z = -0.1
             msg.linear.x = 0.0
@@ -49,8 +61,6 @@ class waypoint_direction(Node):
         self.publisher_.publish(msg)
 
         # prints msg in console
-        # align the car to the correct direction
-        # go forward innit
         self.get_logger().info('Publishing: "%s"' % self.moveangle)
         self.get_logger().info('Publishing: "%s"' % msg.angular)
 
