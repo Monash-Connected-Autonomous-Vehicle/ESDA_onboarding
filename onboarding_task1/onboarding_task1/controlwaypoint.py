@@ -38,7 +38,7 @@ class waypoint_direction(Node):
         msg = Twist()
 
         # step 2: align the car to the correct direction & move forward
-        # if car arrived at waypoint, stop moving
+        # if car arrived at waypoint (or within range), stop moving
         if self.car_pos_x <= self.final_pos_x+1.0 and self.car_pos_x >= self.final_pos_x-1.0 and self.car_pos_y <= self.final_pos_y+1.0 and self.car_pos_y >= self.final_pos_y-1.0:
             msg.linear.x = 0.0
             msg.angular.z = 0.0
